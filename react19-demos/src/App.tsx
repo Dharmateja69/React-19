@@ -1,55 +1,11 @@
-import { useState, useTransition } from "react";
-import Contact from "./Components/useTransition/Contact";
-import Home from "./Components/useTransition/Home";
-import Posts from "./Components/useTransition/Posts";
+import Profile from "./Projects/P2/Profile";
+import Sidebar from "./Projects/P2/Sidebar";
 
-const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("home");
-  const [isPending, startTransition] = useTransition();
-
-  const handleTabChange = (tab: string) => {
-    startTransition(() => {
-      setActiveTab(tab);
-    });
-  };
-
-  const renderContent = () => {
-    switch (activeTab) {
-      case "home":
-        return <Home />;
-      case "posts":
-        return <Posts />;
-      case "contact":
-        return <Contact />;
-      default:
-        return <Home />;
-    }
-  };
-
+const App = () => {
   return (
     <div>
-      <div className="tabs">
-        <button
-          className="border-2 p-4 m-2"
-          onClick={() => handleTabChange("home")}
-        >
-          Home
-        </button>
-        <button
-          className="border-2 p-4 m-2"
-          onClick={() => handleTabChange("posts")}
-        >
-          Posts
-        </button>
-        <button
-          className="border-2 p-4 m-2"
-          onClick={() => handleTabChange("contact")}
-        >
-          Contact
-        </button>
-      </div>
-      {isPending && <p>Loading...</p>}
-      <div className="content">{renderContent()}</div>
+      <Sidebar />
+      <Profile />
     </div>
   );
 };
