@@ -1,0 +1,56 @@
+COMPILER
+React 19 now includes its own compiler, which will not only
+speed up performance but also automate certain tedious
+tasks, reducing the workload for developers.
+
+Memorization
+With React 19's new compiler, there's no longer a need for
+memorization the process of optimizing components to
+prevent unnecessary re-renders. Previously, we relied on
+hooks like 'useMemo()' and 'useCaIIback() for this
+purpose, but these will now become obsolete.
+
+
+Metadata
+We no longer need to install third-party packages for SEO and
+metadata because React 19 now offers built-in support for these
+features. We can place the tags anywhere within the component
+and it will work for both the client and server.
+
+Directives
+React 19 now includes built-in support for use client and use
+server directives.
+This allows components to be rendered on the server,
+resulting in improved SEO, faster page load times, and more
+straightforward data fetching.
+
+USE
+The use() hook lets you read and load resources
+asynchronously, such as promises or context. Unlike other
+hooks, it can be utilized in loops and conditionals.
+In certain situations, it can serve as a replacement for
+useEffect() when fetching data, and it streamlines context
+usage by allowing you to use use(context) instead of
+useContext(contex).
+
+ACTIONS
+React 19 introduces Actions, which are asynchronous
+functions designed to simplify form submissions. Actions
+can be utilized on both the client and server sides.
+
+
+useFormStatus
+useFormStatus is a Hook that gives you status
+information of the last form submission.
+syntax:
+const { pending, data, method, action } = useFormStatus();
+
+
+useActionState is a Hook that allows you to update
+state based on the result of a form action.
+syntax:
+const [state, formAction] = useActionState(fn, initialState);
+
+In React 19, useTransition is a hook that helps manage state updates that might take time, like switching between UI views. It marks updates as low-priority, allowing React to keep the app responsive by showing the existing UI until the update is ready.
+syntax:
+const [isPending, startTransition] = useTransition();
