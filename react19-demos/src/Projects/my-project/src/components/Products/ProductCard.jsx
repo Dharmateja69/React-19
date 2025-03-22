@@ -1,8 +1,11 @@
 import React from "react";
 
-const ProductCard = ({ img, title, newPrice, prevPrice, company }) => {
+const ProductCard = ({ img, title, newPrice, prevPrice, company, onClick }) => {
   return (
-    <div className="bg-white shadow-md rounded-xl p-3 w-48 h-60 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+    <div
+      onClick={onClick}
+      className="bg-white shadow-md rounded-xl p-3 w-48 h-60 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300"
+    >
       {/* Image */}
       <div className="w-full h-24 flex items-center justify-center">
         <img src={img} alt={title} className="max-h-full object-contain" />

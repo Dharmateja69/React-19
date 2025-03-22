@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Productdetails from "../Productdetails/Productdetails";
 import ProductCard from "./ProductCard";
 
 const ProductList = ({
@@ -11,6 +12,7 @@ const ProductList = ({
   total,
 }) => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const size = product.length;
 
   const toggleDropdown = () => {
@@ -18,7 +20,7 @@ const ProductList = ({
   };
 
   return (
-    <div className="flex-1 flex flex-col items-center bg-gray-100 min-h-screen p-6">
+    <div className="flex-1 flex flex-col items-center bg-gray-100 min-h-screen p-6 relative">
       {/* Filter Button */}
       <div className="w-full flex justify-start mb-4 relative">
         <button
@@ -78,6 +80,7 @@ const ProductList = ({
             company={item.company}
             color={item.color}
             category={item.category}
+            onClick={() => setSelectedProduct(item)} // 👈 Pass selected item
           />
         ))}
       </div>
@@ -95,7 +98,7 @@ const ProductList = ({
         {Array.from({ length: total }, (_, i) => (
           <button
             key={i}
-            onClick={() => current(i + 1)} // ✅ FIXED THIS LINE
+            onClick={() => current(i + 1)}
             className={`px-3 py-1 rounded ${
               page === i + 1 ? "bg-black text-white" : "bg-gray-300"
             }`}
@@ -112,6 +115,14 @@ const ProductList = ({
           Next
         </button>
       </div>
+
+      {/* Product Detail Modal */}
+      {selectedProduct && (
+        <Productdetails
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+        />
+      )}
     </div>
   );
 };
