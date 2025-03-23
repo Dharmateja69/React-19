@@ -45,16 +45,16 @@ part-2
 1:33:54 - useSpring Hook//
 1:35:09 - useTransform Hook In Depth//
 1:41:29 - Scroll Trigger vs Scroll Driven Animations//
-1:43:21 - whileInView Prop in Depth
-1:48:40 - useScroll Hook in Depth
-1:51:49 - useScroll Hook Example 1
-1:55:33  - useScroll Hook Example 2
-1:59:34 - Basic Transitions
-2:01:32 - Building Vertical Movement Animation
-2:03:37 - Spinning Icon
-2:05:08 - Skewed Transitions Animation
-2:07:07 - Combined Transformation
-2:08:35 - Sequential Transformation 
+1:43:21 - whileInView Prop in Depth//
+1:48:40 - useScroll Hook in Depth//
+1:51:49 - useScroll Hook Example 1//
+1:55:33  - useScroll Hook Example 2//
+1:59:34 - Basic Transitions//
+2:01:32 - Building Vertical Movement Animation//
+2:03:37 - Spinning Icon//
+2:05:08 - Skewed Transitions Animation//
+2:07:07 - Combined Transformation//
+2:08:35 - Sequential Transformation// 
 2:11:14 - Simple Fade/Out Animation
 2:15:57 - Animated Form Animation
 2:20:17 - Modal With Transitions
