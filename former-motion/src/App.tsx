@@ -1,14 +1,12 @@
-import AnimatedGallery from "./Components/AnimatedGallery";
+import UseTransform from "./Components/Hook/useTransform";
 
 const App = () => {
   return (
-    <div className="min-h-screen   flex items-center justify-center">
-      {/* <AnimatedCard /> */}
-      {/* <ImageGallery /> */}
-      {/* <AnimatedShape /> */}
-      {/* <StaggerAnimation />
-       */}
-      <AnimatedGallery />
+    <div>
+      {/* <UseMotionvalue /> */}
+      {/* <RangeSlider /> */}
+      {/* <Usespring /> */}
+      <UseTransform />
     </div>
   );
 };

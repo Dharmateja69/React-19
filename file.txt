@@ -25,26 +25,26 @@ part-2
 9:20 - Framer vs Framer Motion//
 9:32 - Framer Motion vs CSS Animations Pros & Cons//
 11:26 - Framer vs Framer Motion In Action//
-12:11 - Course Setup
-14:38 - Basic Animations
-16:00 - Motion Object in Depth
-18:12 - Transformations in Depth
-24:10 - Transitions in Depth
-28:09 - Keyframes in Depth
-31:37 - Keyframes Example 1
-35:07 - Keyframes Example 2
-38:00 - Variants In Depth
-44:21 - Building Flipping Card Animation
-49:49 - Gestures Animations
+12:11 - Course Setup//
+14:38 - Basic Animations//
+16:00 - Motion Object in Depth//
+18:12 - Transformations in ///
+24:10 - Transitions in Depth//
+28:09 - Keyframes in Depth//
+31:37 - Keyframes Example 1//
+35:07 - Keyframes Example 2//
+38:00 - Variants In Depth//
+44:21 - Building Flipping Card Animation//
+49:49 - Gestures Animations////
 57:21 - Building Animated Card Animation
-1:02:42 - Building Animated Gallery Animation
-1:08:00 - Variants In Gestures Animations
-1:11:58 - Stagger Animations In Depth
-1:23:53 - useMotion Value Hook
-1:29:47 - Building Custom Range Slider using useMotion Value
-1:33:54 - useSpring Hook
-1:35:09 - useTransform Hook In Depth
-1:41:29 - Scroll Trigger vs Scroll Driven Animations
+1:02:42 - Building Animated Gallery Animation//
+1:08:00 - Variants In Gestures Animations//
+1:11:58 - Stagger Animations In Depth///
+1:23:53 - useMotion Value Hook//
+1:29:47 - Building Custom Range Slider using useMotion Value//
+1:33:54 - useSpring Hook//
+1:35:09 - useTransform Hook In Depth//
+1:41:29 - Scroll Trigger vs Scroll Driven Animations//
 1:43:21 - whileInView Prop in Depth
 1:48:40 - useScroll Hook in Depth
 1:51:49 - useScroll Hook Example 1
