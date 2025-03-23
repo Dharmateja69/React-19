@@ -1,12 +1,15 @@
-import UseTransform from "./Components/Hook/useTransform";
+import ScrollEffectCard from "./Components/ScrollEffectCard";
 
 const App = () => {
   return (
     <div>
-      {/* <UseMotionvalue /> */}
-      {/* <RangeSlider /> */}
-      {/* <Usespring /> */}
-      <UseTransform />
+      {/* <h1 className="text-center text-3xl mb-4">
+        Scroll Down To see The Animation
+      </h1>
+      <div className="h-screen">
+        <AnimateCard />
+      </div> */}
+      <ScrollEffectCard />
     </div>
   );
 };
