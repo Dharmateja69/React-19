@@ -214,3 +214,11 @@ Gestures:
 Gestures allow us to add interactive animations based on
 user actions like dragging, hovering, or tapping. It makes
 our components respond to how users interact with them.
+
+Stagger Animation:
+==================
+Stagger animation refers to a technique where multiple
+elements animate in a sequence rather than all at once. This
+creates a more dynamic and visually appealing effect, as each
+element appears or moves slightly after the previous one,
+adding a sense of rhythm and flow to the animation.

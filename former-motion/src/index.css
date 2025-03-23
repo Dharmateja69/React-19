@@ -17,8 +17,17 @@ body {
 }
 
 .box {
-  width: 200px;
-  height: 200px;
-  /* border-radius: 100%; */
-  background: yellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
 }
