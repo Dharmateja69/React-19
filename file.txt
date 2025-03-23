@@ -9,9 +9,110 @@
 9:05:02 - useFormStatus In Action//
 9:10:52 - useActionState Hook In React 19//
 9:11:47 - useActionState Hook In Action//
-9:17:23 - useTransition Hook In React 19
-9:25:24 - React with TypeScript Project 1
-9:55:22 - React with TypeScript Project 2
-10:37:50 - React with TypeScript Project 3
-11:21:20 - React with TypeScript Project 4
+9:17:23 - useTransition Hook In React 19//
+9:25:24 - React with TypeScript Project 1//
+9:55:22 - React with TypeScript Project 2//
+10:37:50 - React with TypeScript Project 3//
+11:21:20 - React with TypeScript Project 4//
 12:41:45 - Outro
+
+part-2
+======
+00:00 - Trailer//
+1:25 - Intro//
+4:25 - Important Questions//
+8:59 - What is Framer Motion//
+9:20 - Framer vs Framer Motion//
+9:32 - Framer Motion vs CSS Animations Pros & Cons//
+11:26 - Framer vs Framer Motion In Action//
+12:11 - Course Setup
+14:38 - Basic Animations
+16:00 - Motion Object in Depth
+18:12 - Transformations in Depth
+24:10 - Transitions in Depth
+28:09 - Keyframes in Depth
+31:37 - Keyframes Example 1
+35:07 - Keyframes Example 2
+38:00 - Variants In Depth
+44:21 - Building Flipping Card Animation
+49:49 - Gestures Animations
+57:21 - Building Animated Card Animation
+1:02:42 - Building Animated Gallery Animation
+1:08:00 - Variants In Gestures Animations
+1:11:58 - Stagger Animations In Depth
+1:23:53 - useMotion Value Hook
+1:29:47 - Building Custom Range Slider using useMotion Value
+1:33:54 - useSpring Hook
+1:35:09 - useTransform Hook In Depth
+1:41:29 - Scroll Trigger vs Scroll Driven Animations
+1:43:21 - whileInView Prop in Depth
+1:48:40 - useScroll Hook in Depth
+1:51:49 - useScroll Hook Example 1
+1:55:33  - useScroll Hook Example 2
+1:59:34 - Basic Transitions
+2:01:32 - Building Vertical Movement Animation
+2:03:37 - Spinning Icon
+2:05:08 - Skewed Transitions Animation
+2:07:07 - Combined Transformation
+2:08:35 - Sequential Transformation 
+2:11:14 - Simple Fade/Out Animation
+2:15:57 - Animated Form Animation
+2:20:17 - Modal With Transitions
+2:28:32 - Animated Accordion 
+2:33:24 - Animated Notification Toast
+2:37:39 - Bouncing Ball Animation
+2:40:36 - Pulsating Effect
+2:42:43 - Color Change Square
+2:44:42 - Sliding Text Animation
+2:46:15 - Zigzag Animation
+2:48:21 - Wave Effect Animation
+2:50:47 - Background Color Changer Animation
+2:53:13  - Fade Component
+2:55:59 - Navigation Menu With Slide Animation
+2:59:59 - Tooltip with variants
+3:03:36 - Toggle Switch Animation
+3:07:26 - Swipeable Card Animation
+3:12:13 - Draggable Box Animation
+3:14:14 - Rotate on Drag
+3:17:10 - Tap To Change Color
+3:20:07 - Long Press To Change Size
+3:22:57 - Gesture Based Image Gallery
+3:28:36 - Staggered List Animation
+3:32:53 - Staggered Image Gallery
+3:36:13 - Staggered Button Press
+3:39:11 - Staggered Grid Layout
+3:42:47 - Staggered Text Reveal
+3:46:26 - Draggable Box
+3:50:04 - Hover Linked Scale
+3:52:19 - Spring Animated Position
+3:54:42 - Dynamic Rotation
+3:56:59 - Converting To useSpring
+3:58:19 - Staggered Fade and Slide In Animation
+4:03:01 - Card Flip Animation
+4:06:51 - Complex Transition Animation
+4:09:46 - Interactive Hover In View Animation
+4:12:49 - Projects Setup
+4:14:54 - Scroll Indicator
+4:18:56 - Loader
+4:22:19 - Draggable Card
+4:28:35 - Carousel
+4:44:02 - Advance Sidebar
+4:58:41 - Scroll Carousel
+5:05:17 - Sticky Navigation
+5:15:42 - Progress Steps
+5:27:50 - What is Zustand
+5:29:37 - Zustand Setup
+5:30:41 - Store In Action
+5:34:28 - Accessing Data From Store
+5:38:46 - Recipe Book
+6:01:58 - Expense Tracker
+6:18:15 - Password Generator
+6:36:04 - Seafood Recipes
+6:47:00 - Form Builder
+7:12:57 - Todo List
+7:25:57 - Advance Notes Project
+7:48:01 - Advance Lists Project
+8:41:55 - Advance Watch Store Project
+9:58:36 - Redux Toolkit
+10:31:06 - Redux Toolkit Query ( RTK Query )
+11:15:47 - Outro
