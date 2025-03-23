@@ -112,3 +112,80 @@ new to it.
 
 Adds extra weight to your application compared to using
 just CSS.
+
+framer-motion
+=============
+import { motion } from "framer-motion"
+
+motion is an object that provides a set of components and
+hooks for creating animations and transitions in React
+applications.
+
+motion:
+=======
+When we use <motion.element> we're indicating that we
+want to animate that specific <element>. Framer Motion
+then provides additional props and features to facilitate
+those animations, such as initial, animate, and exit,
+allowing for more powerful and customizable animations.
+
+Initial Prop:
+=============
+The initial prop is used to define the initial state of an
+animated component before it enters the DOM, it specify
+how the element should appear when it first renders.
+
+Animate Prop:
+=============
+The animate prop is used to create animations for a
+component. It lets you set target values for different CSS
+properties, making it easy to have smooth changes when
+the component's state updates.
+
+Exit Prop:
+==========
+Exit prop is used to define the animation that occurs when
+a component is removed from the React tree. This is
+particularly useful for creating smooth transitions when
+elements are unmounted/removed, enhancing the user
+experience by visually indicating that something has
+disappeared.
+
+Transformations:
+================
+Transformations allow you to change the shape, size, and
+position of elements on a webpage.
+
+Transitions:
+===========
+Transitions are the effects that control how animations
+happen. Think of them as the "rules" for how an element
+moves or changes.
+
+Transitions Properties:
+======================
+Duration:How long the animation takes.
+Easing: The speed curve of the animation.
+Delay: How long to wait before starting the animation.
+
+  <motion.div
+        className="box"
+        initial={{ x: 0 }}
+        animate={{ x: 200 }}
+        // transition={{ delay: 2 }}
+        // transition={{ delay: 5 }}
+        // transition={{ duration: 1 }}
+        transition={{ duration: 2, ease: "linear" }}
+      />
+
+Keyframes:
+===========
+keyframes allow us to create more complex animations by
+specifying multiple points in an animation sequence.
+Instead of just animating from one state to another, we
+can define several intermediate states (frames) to control
+the animation more precisely.
+In simple : Splitting / Diving Animation
+Into Multiple Frames.
+[start,end]=>syntax
+

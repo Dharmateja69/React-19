@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import { motion } from "framer-motion";
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      {/* <motion.div className="box" animate={{ x: 100 }}></motion.div>
+      <motion.div className="box" animate={{ y: 20 }}></motion.div>
+      <motion.div className="box" animate={{ rotateX: 20 }}></motion.div>
+      <motion.div className="box" animate={{ rotateY: 20 }}></motion.div>
+      <motion.div className="box" animate={{ scaleX: 20 }}></motion.div>
+      <motion.div className="box" animate={{ scaleY: 20 }}></motion.div>
+      <motion.div className="box" animate={{ scaleZ: 20 }}></motion.div>
+      <motion.div className="box" animate={{ scale: 2 }}></motion.div>
+      //increases the size of the elemenet
+      <motion.div className="box" animate={{ skewX: 20 }}></motion.div>
+      <motion.div className="box" animate={{ skewY: 20 }}></motion.div>// used
+      to tilt
+      <motion.div className="box" animate={{ skew: 20 }}></motion.div> */}
+      <motion.div
+        className="box"
+        // initial={{ x: 0 }}
+        // animate={{ x: 200 }}
+        // transition={{ delay: 2 }}
+        // transition={{ delay: 5 }}
+        // transition={{ duration: 1 }}
+        animate={{ scale: [1, 2, 2, 3, 4, 3, 2, 1] }}
+        transition={{ duration: 5 }}
+      />
+    </div>
+  );
+};
 
-export default App
+export default App;
