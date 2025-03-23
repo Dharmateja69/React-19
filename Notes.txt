@@ -208,3 +208,9 @@ Use Variants:
 Apply these variants to our animated component,
 making it easy to switch between states without
 repeating code.
+
+Gestures:
+=========
+Gestures allow us to add interactive animations based on
+user actions like dragging, hovering, or tapping. It makes
+our components respond to how users interact with them.
