@@ -1,12 +1,15 @@
+import Waveffect from "./Practice/Keyframes/Waveffect";
+
 const App = () => {
   return (
     <div>
-      {/* <Fadeinout /> */}
-
-      {/* <Sidebars /> */}
-      {/* <Modal /> */}
-      {/* <Accrodion /> */}
-      {/* <Notification /> */}
+      {/* <Bounceball /> */}
+      {/* <Pulsating /> */}
+      {/* <Coloranimation /> */}
+      {/* <Slidingtext /> */}
+      {/* <Zigzag /> */}
+      <Waveffect />
+      {/* <Background /> */}
     </div>
   );
 };
