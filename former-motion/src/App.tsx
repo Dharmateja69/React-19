@@ -1,13 +1,12 @@
 const App = () => {
   return (
     <div>
-      {/* <Tranlation /> */}
-      {/* <Vertical /> */}
-      {/* <Rotation /> */}
-      {/* <Skewd /> */}
-      {/* <CombinedTransformation /> */}
-      {/* <Sequential /> */}
-      {/* <Waterdop /> */}
+      {/* <Fadeinout /> */}
+
+      {/* <Sidebars /> */}
+      {/* <Modal /> */}
+      {/* <Accrodion /> */}
+      {/* <Notification /> */}
     </div>
   );
 };
