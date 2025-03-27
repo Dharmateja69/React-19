@@ -1,14 +1,5 @@
-import DynamicRotation from "./Practice/StaggredAction/DynamicRotation";
-
 const App = () => {
-  return (
-    <div>
-      {/* <DraggableBox /> */}
-      {/* <HoverLinkedScale /> */}
-      {/* <SpringAnimatedPosition /> */}
-      <DynamicRotation />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default App;
