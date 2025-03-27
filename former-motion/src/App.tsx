@@ -1,12 +1,12 @@
+import Todolist from "./Practice/variants/Todolist";
+
 const App = () => {
   return (
     <div>
-      {/* <Swipeable /> */}
-      {/* <Draggle /> */}
-      {/* <RotateDrag /> */}
-      {/* <Tapcolor /> */}
-      {/* <Longpress /> */}
-      {/* <ImageGallery /> */}
+      {/* <Fadein /> */}
+      {/* <Navigationmenue /> */}
+      {/* <Tooltip /> */}
+      <Todolist />
     </div>
   );
 };
