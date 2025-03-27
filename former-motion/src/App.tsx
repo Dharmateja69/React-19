@@ -1,5 +1,11 @@
 const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      {/* <StaggeredList /> */}
+      {/* <StaggeredImageGallery /> */}
+      {/* <StaggeredTextReval /> */}
+    </div>
+  );
 };
 
 export default App;
