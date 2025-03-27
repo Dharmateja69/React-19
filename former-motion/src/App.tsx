@@ -1,13 +1,12 @@
-import Interactivehover from "./Practice/whileview/Interactivehover";
-import Timeline from "./Practice/whileview/Timeline";
+import DynamicRotation from "./Practice/StaggredAction/DynamicRotation";
 
 const App = () => {
   return (
     <div>
-      {/* <StaggredFade /> */}
-      {/* <Cardflip /> */}
-      {/* <Timeline /> */}
-      <Interactivehover />
+      {/* <DraggableBox /> */}
+      {/* <HoverLinkedScale /> */}
+      {/* <SpringAnimatedPosition /> */}
+      <DynamicRotation />
     </div>
   );
 };
