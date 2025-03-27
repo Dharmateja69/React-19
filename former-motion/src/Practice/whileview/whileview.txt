@@ -8,7 +8,7 @@
 2. Use a `motion.ul` for the list and `motion.li` for each item.
 3. Implement staggered animations using `variants` and the `transition` prop.
 
-### Card Flip Animation
+### Card Flip AnimationCard
 
 **Goal:** Create a card that flips when it comes into view, revealing its back side.
 

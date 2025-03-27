@@ -1,12 +1,13 @@
-import Todolist from "./Practice/variants/Todolist";
+import Interactivehover from "./Practice/whileview/Interactivehover";
+import Timeline from "./Practice/whileview/Timeline";
 
 const App = () => {
   return (
     <div>
-      {/* <Fadein /> */}
-      {/* <Navigationmenue /> */}
-      {/* <Tooltip /> */}
-      <Todolist />
+      {/* <StaggredFade /> */}
+      {/* <Cardflip /> */}
+      {/* <Timeline /> */}
+      <Interactivehover />
     </div>
   );
 };
