@@ -291,3 +291,15 @@ triggered based on the visibility of an element in the viewport.
 It allows us to specify settings that affect when and how
 animations occur as elements scroll into or out of view.
 
+Zustand:
+=======
+Zustand is a lightweight state management library for React
+applications. It helps you manage and share state across
+different parts of your app without needing to pass props
+through many layers or use complex solutions.
+
+App->Header->Nav
+|
+Card->users->Date
+        |
+        Time
