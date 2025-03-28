@@ -1,13 +1,12 @@
-import OtherComponent from "./ZustandStore/OtherComponent";
-import { useCounter } from "./ZustandStore/Store";
+import Food from "./ZustandProjects/SeafoodRecipe/Food";
 
 const App = () => {
-  const count = useCounter((state) => state.count);
-
   return (
     <div>
-      <h1>Count: {count}</h1>
-      <OtherComponent />
+      {/* <Book /> */}
+      {/* <Expenses /> */}
+      {/* <Passwordgenerator /> */}
+      <Food />
     </div>
   );
 };

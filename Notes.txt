@@ -303,3 +303,12 @@ App->Header->Nav
 Card->users->Date
         |
         Time
+
+
+//tell me where we have used spread operator in the above code and what i will do ?
+// We have used the spread operator in the following places:
+// 1. In the `addRecipe` method, we use the spread operator to create a new array of recipes by combining the existing recipes with the new recipe object. This allows us to add a new recipe while keeping the existing ones intact.
+// 2. In the `addRecipe` method, we also use the spread operator to create a new recipe object by combining the properties of the `recipe` parameter with a new `id` and `isEditing` property. This allows us to create a new recipe object without mutating the original one.
+
+// The spread operator is used to create shallow copies of arrays and objects, which is important in state management libraries like Zustand to ensure that we are not mutating the state directly. Instead, we create new copies of the state with the necessary changes, which allows Zustand to detect changes and update the UI accordingly.
+// The spread operator is a powerful tool in JavaScript that allows you to expand or spread elements of an iterable (like an array or object) into another array or object. In the context of state management, it helps in creating new state objects without mutating the original state, which is crucial for maintaining predictable state updates
