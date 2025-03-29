@@ -73,7 +73,7 @@ const Passwordgenerator = () => {
 
           {/* Generated Password */}
           {generatedPassword && (
-            <div className="bg-gray-300 inline-block text-black px-4 py-2 rounded-md">
+            <div className="w-full bg-gray-300 text-black px-4 py-2 rounded-md break-words overflow-x-auto whitespace-pre-wrap">
               {generatedPassword}
             </div>
           )}
