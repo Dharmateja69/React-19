@@ -1,0 +1,67 @@
+What Is Store?
+A store is a central place where the state of
+our application is stored & it can be created
+using the ConfigureStore function, and it holds
+the entire state tree of our application.
+
+
+What Is Slice?
+A slice is a piece of store state and  the corresponding
+reducer logic to update that state. Slices are a way to
+organize our Redux store by breaking it down into
+smaller, more manageable parts.
+
+Slices Analogy
+Imagine you have a big cake, and you want to cut it into
+smaller, more manageable pieces. Each smaller piece is
+like a "slice" of the cake. In the context redux toolkit a
+"slice" is like a smaller part of your application's overall
+state and the instructions on how to change or update
+that specific part.
+
+
+initialState:
+============
+InitialState as the name suggest is going to be the "initial"
+data of our state.
+
+Reducers:
+• Reducers are like the instructions on what to do with
+each slice of the cake.
+• They define how the information in a particular slice
+can.
+
+Actions
+• Actions are like the requests or command you give
+to change a specific slice of the cake.
+• For example, you might have an action called "Eat a
+Bite" that instructs how to take a bite from a slice.
+
+useSelector() Hook
+useSelector hook allows us to read data from the
+redux store.
+
+useDispatch() Hook
+The dispatch function is used to send actions to the
+store, triggering updates to the application state.
+In simpler terms, it lets you change the state in your
+Redux store from within your React components.
+
+Redux Toolkit Query
+Redux Toolkit Query ( RTK ) is specifically designed to simplify data fetching
+caching, and state management
+for API calls in a React and Redux application.
+
+
+What We'll Learn?
+How to Get All Products
+How to Get a specific product
+How to Add a new product
+How to Update a product
+How to Delete a product
+
+
+step:1 create a store.
+step:2 wrap the app inside the provider.
+step:3 
+step:4  add slice reducer to the store

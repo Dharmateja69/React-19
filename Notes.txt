@@ -312,3 +312,19 @@ Card->users->Date
 
 // The spread operator is used to create shallow copies of arrays and objects, which is important in state management libraries like Zustand to ensure that we are not mutating the state directly. Instead, we create new copies of the state with the necessary changes, which allows Zustand to detect changes and update the UI accordingly.
 // The spread operator is a powerful tool in JavaScript that allows you to expand or spread elements of an iterable (like an array or object) into another array or object. In the context of state management, it helps in creating new state objects without mutating the original state, which is crucial for maintaining predictable state updates
+
+
+Redux:
+======
+Redux is an open-source javascript library for managing the state of an application in a predictable
+way. It is commonly used with libraries like React for
+building user interfaces but can be used with any
+JavaScript framework or library.
+->Makes the state managment easy.
+
+Toolkit:
+========
+The official , opinionated , batteries-included toolset for efficient redux development
+->Make the redux easy to work with.
+
+redux is bit similar to the zustand (where we use the store where the main logic is stored)
