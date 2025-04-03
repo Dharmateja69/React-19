@@ -8,6 +8,8 @@ interface AudioState {
   frequencies: number[];
   waveform: number[];
   isPlaying: boolean;
+  mode: "bars" | "circles"; // NEW: Visualization mode
+  setMode: (mode: "bars" | "circles") => void;
   setAudioFile: (file: File) => void;
   play: () => void;
   pause: () => void;
@@ -22,6 +24,8 @@ export const useAudioStore = create<AudioState>((set, get) => ({
   frequencies: [],
   waveform: [],
   isPlaying: false,
+  mode: "bars",
+  setMode: (mode) => set({ mode: mode }),
 
   setAudioFile: async (file: File) => {
     const audioContext = new (window.AudioContext ||
