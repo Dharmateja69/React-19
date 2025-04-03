@@ -1,17 +1,35 @@
-import AudioControls from "./Projects/AudioVisualizer/components/AudioControls";
-import { AudioVisualizer } from "./Projects/AudioVisualizer/components/AudioVisualizer";
+import React, { useRef } from "react";
+import CanvasRenderer from "./Projects/OfflineAvatar/Components/CanvasRenderer";
+import ExportButton from "./Projects/OfflineAvatar/Components/ExportButton";
+import { useAvatarStore } from "./Projects/OfflineAvatar/Store/useAvatarStore";
+import AssetLibrary from "./Projects/OfflineAvatar/utils/AssetLibrary";
 
-const App = () => {
+const App: React.FC = () => {
+  const { setHair, setEyes, setMouth, setAccessories } = useAvatarStore();
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
-      <h1 className="text-2xl font-bold mb-6">🎵 Music Visualizer</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+      <h1 className="text-3xl font-bold mb-4">🎨 Avatar Builder</h1>
 
-      {/* Upload & Play Controls */}
-      <AudioControls />
+      {/* Avatar Preview (Canvas) */}
+      <div className="bg-white p-4 rounded-lg shadow-md">
+        <CanvasRenderer ref={canvasRef} />
+      </div>
 
-      {/* Visualization */}
-      <div className="mt-6 w-full max-w-2xl">
-        <AudioVisualizer />
+      {/* Asset Selection (Pass down state setters) */}
+      <div className="mt-4 w-full max-w-md">
+        <AssetLibrary
+          setHair={setHair}
+          setEyes={setEyes}
+          setMouth={setMouth}
+          setAccessories={setAccessories}
+        />
+      </div>
+
+      {/* Export Button (Pass down canvasRef) */}
+      <div className="mt-4">
+        <ExportButton canvasRef={canvasRef} />
       </div>
     </div>
   );
