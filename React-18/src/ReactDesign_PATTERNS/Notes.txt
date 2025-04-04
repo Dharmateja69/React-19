@@ -1,0 +1,13 @@
+DESIGN PATTERNS:
+===============
+Design patterns are common solutions and best
+practices used to structure code efficiently, making
+it more maintainable, reusable, and scalable.
+
+Layout-Component:
+=================
+Layout components are strategies for organizing and
+composing components that manage the layout structure of a
+project. These components typically control the positioning
+and arrangement of child elements within a page, acting as
+containers for other Ul elements or sections.

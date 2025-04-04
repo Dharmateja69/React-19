@@ -1,0 +1,101 @@
+00:00 - Trailer
+2:11 - Course Content//
+5:25 - Sponsor//
+7:01 - What is Design Pattern//
+7:40 - Why Design Pattern//
+8:03 - Design Patterns Setup//
+9:27 - Layout Component Design Pattern Theory//
+10:34 - Split Screen Design Pattern//
+17:03 - Challenges Setup
+19:28 - Split Screen Design Pattern Challenge
+31:36 - List Of Data Design Pattern
+42:06 - List Of Data Design Pattern Challenge
+53:06 - Modal Design Pattern
+57:34 - Container Component Design Pattern Theory
+59:22 - Container Component Design Pattern In Action
+1:09:19 - Refactoring Part 1
+1:12:02 - Refactoring Part 2
+1:21:50 - Refactoring Part 3
+1:26:14 - Container Component Design Pattern Challenge
+1:39:06 - Controlled vs Uncontrolled Design Pattern Theory
+1:39:50 - Controlled vs Uncontrolled Design Pattern In Action
+1:48:10 - Controlled vs Uncontrolled Design Pattern Challenge
+2:01:40 - Higher Order Components Design Pattern Theory
+2:03:46 - Higher Order Components Design Pattern In Action
+2:14:47 - Higher Order Components Design Pattern Challenge
+2:47:19 - Custom Hooks Theory
+2:28:34 - useFetch Custom Hook
+2:36:05 - Small Refactor
+2:37:40 - useForm Custom Hook
+2:47:24 - useLocalStorage Custom Hook
+2:58:36 - useModal Custom Hook
+3:03:40 - Custom Hook Challenge
+3:26:17 - Factory Design Pattern Theory
+3:27:23 - Factory Design Pattern Example 1
+3:32:46 - Factory Design Pattern Example 2
+3:39:45 - Factory Design Pattern Challenge
+3:51:54 - Compound Component Design Pattern Theory
+3:54:27 - Compound Component Design Pattern In Action
+4:02:28 - Compound Component Design Pattern Challenge
+4:11:04 - Slots Design Pattern Complete Guide
+4:27:54 - Render Props Design Pattern
+4:34:25 - Render Props Challenge
+4:43:13 - What is Tanstack Query
+4:43:58 - Tanstack Query Setup
+4:46:24 - Life without Tanstack Query
+4:53:35 -  The Heart Of Tanstack Query
+4:55:19 - useQuery From Tanstack Query Theory
+4:56:57 - useQuery In Action
+5:04:40 - Deduplication Theory
+5:06:38 - Deduplication In Action
+5:08:32 - Tanstack Query Devtools
+5:09:51 - Stale vs Fresh Theory
+5:11:13 - Stale vs Fresh In Action
+5:15:03 - RefetchInterval Theory
+5:15:30 - RefetchInterval In Action
+5:20:27 - useQueries Theory
+5:21:55 - useQueries In Action
+5:34:42 - useMutation Theory
+5:35:53 - useMutation In Action
+5:46:34 - Paginations In Tanstack Query
+5:54:21 - What is Testing
+5:54:39 - Types Of Automated Testing
+5:57:05 - Testing Frameworks
+5:57:52 - Let's make a Testing Setup
+6:00:09 - Testing Basic Code
+6:04:46 - Basic Testing Syntax Theory
+6:08:18 - Testing Math Utils
+6:15:39 - Testing Challenges Setup
+6:17:11 - Math Utils Challenges
+6:23:42 - AAA Pattern Theory
+6:25:55 - AAA Pattern In Action
+6:27:21 - String Utils Testing
+6:33:43 - String Utils Testing Challenges
+6:38:45 - Array Utils Testing 
+6:44:17 - Array Utils Testing Challenges
+6:49:18 - Object Utils Testing
+6:56:38 - Object Utils Testing Challenges
+7:04:08 - Test Driven Development ( TDD ) Theory
+7:05:31 - TDD In Action
+7:10:22 - Matchers Complete Guide
+7:23:26 - Positive vs Negative Testing Theory
+7:25:27- Positive vs Negative Testing In Action
+7:28:01 - Boundary Testing Theory
+7:30:01 - Boundary Testing In Action
+7:40:03 - Parameterized Testing Theory
+7:14:07 - Parameterized Testing In Action
+7:46:34 - Testing Async Code
+7:53:27 - React Testing Setup
+8:05:49 - Component with Props Testing 
+8:12:33 - List Component Testing
+8:18:44 - I Love getByRole
+8:21:18 - getByRole In Action
+8:28:08 - Screen Object Methods Theory
+8:32:09 - All getBys
+8:39:35 - All getAllBys
+8:53:23 - All queryBys
+9:01:33 - All queryAllBys
+9:09:22 - All findBys
+9:18:31 - All findAllBys
+9:27:43 - Testing User Interactions
+9:48:28 - Outro
