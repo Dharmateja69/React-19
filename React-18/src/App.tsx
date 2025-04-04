@@ -1,13 +1,21 @@
-import Left from "./ReactDesign_PATTERNS/Components/Left";
-import Right from "./ReactDesign_PATTERNS/Components/Right";
-import Split from "./ReactDesign_PATTERNS/Components/Split";
+import Content from "./ReactDesign_PATTERNS/Challenges/Splitborders/Content";
+import Footer from "./ReactDesign_PATTERNS/Challenges/Splitborders/Footer";
+import Header from "./ReactDesign_PATTERNS/Challenges/Splitborders/Header";
+import Sidebar from "./ReactDesign_PATTERNS/Challenges/Splitborders/Sidebar";
+import SplitScreen from "./ReactDesign_PATTERNS/Challenges/Splitborders/SplitScreen";
 
 function App() {
   return (
-    <Split leftwidth={60} rightwidth={40}>
-      <Left />
-      <Right />
-    </Split>
+    <div>
+      <Header />
+
+      <SplitScreen left={30} right={70}>
+        <Sidebar />
+        <Content />
+      </SplitScreen>
+
+      <Footer />
+    </div>
   );
 }
 
