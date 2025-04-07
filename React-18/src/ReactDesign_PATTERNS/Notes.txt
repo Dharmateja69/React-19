@@ -11,3 +11,10 @@ composing components that manage the layout structure of a
 project. These components typically control the positioning
 and arrangement of child elements within a page, acting as
 containers for other Ul elements or sections.
+
+Container Components:
+=====================
+Container Components are responsible for loading and managing
+data for their child components. This pattern is often used in
+conjunction with Presentational Components "Dumb Components"
+to keep the Ul more modular and maintainable.

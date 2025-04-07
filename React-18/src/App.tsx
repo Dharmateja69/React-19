@@ -1,13 +1,12 @@
-import { games } from "./ReactDesign_PATTERNS/modals/data";
-import GameInfo from "./ReactDesign_PATTERNS/modals/GameInfo";
-import Modal from "./ReactDesign_PATTERNS/modals/Modal";
+import SingleTodoLoader from "./ReactDesign_PATTERNS/CointnerComponent/Component/SingleTodoLoader";
+import Todo from "./ReactDesign_PATTERNS/CointnerComponent/Component/Todo";
 
 const App = () => {
   return (
     <>
-      <Modal>
-        <GameInfo data={games} />
-      </Modal>
+      <SingleTodoLoader>
+        <Todo />
+      </SingleTodoLoader>
     </>
   );
 };

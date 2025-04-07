@@ -10,12 +10,12 @@
 19:28 - Split Screen Design Pattern Challenge//
 31:36 - List Of Data Design Pattern//
 42:06 - List Of Data Design Pattern Challenge//
-53:06 - Modal Design Pattern
-57:34 - Container Component Design Pattern Theory
-59:22 - Container Component Design Pattern In Action
-1:09:19 - Refactoring Part 1
-1:12:02 - Refactoring Part 2
-1:21:50 - Refactoring Part 3
+53:06 - Modal Design Pattern//
+57:34 - Container Component Design Pattern Theory//
+59:22 - Container Component Design Pattern In Action//
+1:09:19 - Refactoring Part 1 //did't understand
+1:12:02 - Refactoring Part 2//    ||
+1:21:50 - Refactoring Part 3//    ||
 1:26:14 - Container Component Design Pattern Challenge
 1:39:06 - Controlled vs Uncontrolled Design Pattern Theory
 1:39:50 - Controlled vs Uncontrolled Design Pattern In Action
