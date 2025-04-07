@@ -1,29 +1,13 @@
-import {
-  clothing,
-  electronics,
-  homeGoods,
-} from "./ReactDesign_PATTERNS/Challenges/Listdata/Data";
-import ProductInfo from "./ReactDesign_PATTERNS/Challenges/Listdata/ProductInfo";
-import Renderlist from "./ReactDesign_PATTERNS/Challenges/Listdata/Renderlist";
+import { games } from "./ReactDesign_PATTERNS/modals/data";
+import GameInfo from "./ReactDesign_PATTERNS/modals/GameInfo";
+import Modal from "./ReactDesign_PATTERNS/modals/Modal";
 
 const App = () => {
   return (
     <>
-      <Renderlist
-        data={electronics}
-        resourceName="product"
-        DataToRender={ProductInfo}
-      />
-      <Renderlist
-        data={clothing}
-        resourceName="product"
-        DataToRender={ProductInfo}
-      />
-      <Renderlist
-        data={homeGoods}
-        resourceName="product"
-        DataToRender={ProductInfo}
-      />
+      <Modal>
+        <GameInfo data={games} />
+      </Modal>
     </>
   );
 };

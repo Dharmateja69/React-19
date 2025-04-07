@@ -6,10 +6,10 @@
 8:03 - Design Patterns Setup//
 9:27 - Layout Component Design Pattern Theory//
 10:34 - Split Screen Design Pattern//
-17:03 - Challenges Setup
-19:28 - Split Screen Design Pattern Challenge
-31:36 - List Of Data Design Pattern
-42:06 - List Of Data Design Pattern Challenge
+17:03 - Challenges Setup//
+19:28 - Split Screen Design Pattern Challenge//
+31:36 - List Of Data Design Pattern//
+42:06 - List Of Data Design Pattern Challenge//
 53:06 - Modal Design Pattern
 57:34 - Container Component Design Pattern Theory
 59:22 - Container Component Design Pattern In Action
