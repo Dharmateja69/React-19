@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const NotFoundPage = () => {
+const Error = () => {
   return (
     <motion.div
       className="h-screen flex flex-col items-center justify-center text-gray-800"
@@ -39,4 +39,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default Error;

@@ -1,22 +1,23 @@
-import Content from "./ReactDesign_PATTERNS/Challenges/Splitborders/Content";
-import Footer from "./ReactDesign_PATTERNS/Challenges/Splitborders/Footer";
-import Header from "./ReactDesign_PATTERNS/Challenges/Splitborders/Header";
-import Sidebar from "./ReactDesign_PATTERNS/Challenges/Splitborders/Sidebar";
-import SplitScreen from "./ReactDesign_PATTERNS/Challenges/Splitborders/SplitScreen";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import ThemeProvider from "./Projects/Advanceofcontextapi/components/ThemeSwitcher/ThemeProvider";
+import Dashboard from "./Projects/Advanceofcontextapi/pages/Dashboard";
+import Error from "./Projects/Advanceofcontextapi/pages/Error";
+import Home from "./Projects/Advanceofcontextapi/pages/Home";
+import Tutorials from "./Projects/Advanceofcontextapi/pages/Tutorials";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Header />
-
-      <SplitScreen left={30} right={70}>
-        <Sidebar />
-        <Content />
-      </SplitScreen>
-
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/tutorials" element={<Tutorials />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
