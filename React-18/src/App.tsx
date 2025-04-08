@@ -5,9 +5,18 @@ const App = () => {
   return (
     <div>
       {" "}
-      <SingleTodoLoader>
+      <SingleTodoLoader todoId="1">
         <Todo />
       </SingleTodoLoader>
+      <br />
+      <SingleTodoLoader todoId="2">
+        <Todo />
+      </SingleTodoLoader>
+      <br />
+      <SingleTodoLoader todoId="3">
+        <Todo />
+      </SingleTodoLoader>
+      <br />
     </div>
   );
 };

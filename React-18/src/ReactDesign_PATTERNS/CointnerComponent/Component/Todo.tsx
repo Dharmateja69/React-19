@@ -5,21 +5,20 @@ interface Todo {
 }
 
 interface TodoListProps {
-  todos: Todo[] | null;
+  todos: Todo | null;
 }
-
 const Todo = ({ todos }: TodoListProps) => {
+  const { id, title } = todos || {};
+
   return todos ? (
-    todos.map((item) => (
-      <div key={item.id}>
-        <p>
-          <strong>Todo ID:</strong> {item.id}
-        </p>
-        <h1>
-          <strong>Todo Title:</strong> {item.title}
-        </h1>
-      </div>
-    ))
+    <div>
+      <p>
+        <strong>Todo ID:</strong> {id}
+      </p>
+      <h1>
+        <strong>Todo Title:</strong> {title}
+      </h1>
+    </div>
   ) : (
     <p>Loading...</p>
   );

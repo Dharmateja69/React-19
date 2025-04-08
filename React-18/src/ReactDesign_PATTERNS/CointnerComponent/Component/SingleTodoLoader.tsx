@@ -10,18 +10,19 @@ interface Todo {
 
 interface SingleTodoLoaderProps {
   children: ReactNode;
+  todoId: number;
 }
 
 interface ChildComponentProps {
   todos: Todo | null;
 }
-const SingleTodoLoader = ({ children }: SingleTodoLoaderProps) => {
+const SingleTodoLoader = ({ children, todoId }: SingleTodoLoaderProps) => {
   const [todos, setTodos] = useState<Todo | null>(null);
 
   useEffect(() => {
     (async () => {
       const response = await axios.get<Todo>(
-        "https://jsonplaceholder.typicode.com/todos"
+        `https://jsonplaceholder.typicode.com/todos/${todoId}`
       );
       setTodos(response.data);
     })();
