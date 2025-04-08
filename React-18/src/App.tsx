@@ -1,7 +1,6 @@
 import axios from "axios";
-import Commentlist from "./ReactDesign_PATTERNS/CointnerComponent/DataSource/Commentlist";
-import DataSource from "./ReactDesign_PATTERNS/CointnerComponent/DataSource/DataSource";
-import Todo from "./ReactDesign_PATTERNS/CointnerComponent/DataSource/Todo";
+import DataSource from "./ReactDesign_PATTERNS/Challenges/Containercomponent/DataSource";
+import ProductInfo from "./ReactDesign_PATTERNS/Challenges/Containercomponent/ProductInfo";
 
 const getServerData = (url: string) => async () => {
   const response = await axios.get(url);
@@ -10,28 +9,14 @@ const getServerData = (url: string) => async () => {
 
 const App = () => {
   return (
-    <div>
-      <hr></hr>
-
+    <>
       <DataSource
-        getDatafunc={getServerData(
-          "https://jsonplaceholder.typicode.com/todos/1"
-        )}
-        resourceName="todo"
+        getDatafun={getServerData("https://fakestoreapi.com/products")}
+        resourceName="products"
       >
-        <Todo />
+        <ProductInfo /> {/* ✅ NO need to pass props manually */}
       </DataSource>
-      <hr></hr>
-      <DataSource
-        resourceName="comments"
-        getDatafunc={getServerData(
-          "https://jsonplaceholder.typicode.com/comments/1"
-        )}
-      >
-        <Commentlist />
-      </DataSource>
-      <hr></hr>
-    </div>
+    </>
   );
 };
 

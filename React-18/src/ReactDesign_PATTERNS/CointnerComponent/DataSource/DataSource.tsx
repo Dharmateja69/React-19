@@ -6,7 +6,7 @@ interface DataProps {
   children: ReactNode;
 }
 
-const DataSource = ({
+export const DataSource = ({
   getDatafunc = () => {},
   resourceName,
   children,
@@ -19,11 +19,12 @@ const DataSource = ({
       setState(data);
     })();
   }, []);
+
   return (
     <>
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
-          return React.cloneElement(child, { [resourceName]: state });
+          return React.cloneElement(child, { [resourceName]: state }); // ✅ injects products
         }
         return child;
       })}
@@ -31,5 +32,4 @@ const DataSource = ({
   );
 };
 
-export default DataSource;
 // <ChildComponent user={{ name: "John" }} />
