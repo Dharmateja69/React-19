@@ -1,22 +1,36 @@
-import SingleTodoLoader from "./ReactDesign_PATTERNS/CointnerComponent/Component/SingleTodoLoader";
-import Todo from "./ReactDesign_PATTERNS/CointnerComponent/Component/Todo";
+import axios from "axios";
+import Commentlist from "./ReactDesign_PATTERNS/CointnerComponent/DataSource/Commentlist";
+import DataSource from "./ReactDesign_PATTERNS/CointnerComponent/DataSource/DataSource";
+import Todo from "./ReactDesign_PATTERNS/CointnerComponent/DataSource/Todo";
+
+const getServerData = (url: string) => async () => {
+  const response = await axios.get(url);
+  return response.data;
+};
 
 const App = () => {
   return (
     <div>
-      {" "}
-      <SingleTodoLoader todoId="1">
+      <hr></hr>
+
+      <DataSource
+        getDatafunc={getServerData(
+          "https://jsonplaceholder.typicode.com/todos/1"
+        )}
+        resourceName="todo"
+      >
         <Todo />
-      </SingleTodoLoader>
-      <br />
-      <SingleTodoLoader todoId="2">
-        <Todo />
-      </SingleTodoLoader>
-      <br />
-      <SingleTodoLoader todoId="3">
-        <Todo />
-      </SingleTodoLoader>
-      <br />
+      </DataSource>
+      <hr></hr>
+      <DataSource
+        resourceName="comments"
+        getDatafunc={getServerData(
+          "https://jsonplaceholder.typicode.com/comments/1"
+        )}
+      >
+        <Commentlist />
+      </DataSource>
+      <hr></hr>
     </div>
   );
 };
