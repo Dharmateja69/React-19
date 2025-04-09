@@ -72,10 +72,11 @@ export default function AboutPage() {
     <div
       className="p-6 border border-solid relative max-w-7xl mx-auto h-screen"
       style={{
-        borderLeft: `3px solid var(--theme-color)`,
         borderTop: `3px solid var(--theme-color)`,
         borderBottom: `3px solid var(--theme-color)`,
         borderRight: `3px solid var(--theme-color)`,
+        borderLeft: `3px solid var(--theme-color)`,
+        boxShadow: `0 4px 20px var(--theme-color)`,
       }}
     >
       <div className="flex flex-col md:flex-row gap-8 mb-8">
@@ -84,6 +85,13 @@ export default function AboutPage() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
+          style={{
+            borderTop: `3px solid var(--theme-color)`,
+            borderBottom: `3px solid var(--theme-color)`,
+            borderRight: `3px solid var(--theme-color)`,
+            borderLeft: `3px solid var(--theme-color)`,
+            boxShadow: `0 4px 20px var(--theme-color)`,
+          }}
         >
           {profileImage ? (
             <>
@@ -197,10 +205,11 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
           style={{
-            borderLeft: `3px solid var(--theme-color)`,
             borderTop: `3px solid var(--theme-color)`,
             borderBottom: `3px solid var(--theme-color)`,
             borderRight: `3px solid var(--theme-color)`,
+            borderLeft: `3px solid var(--theme-color)`,
+            boxShadow: `0 4px 20px var(--theme-color)`,
           }}
         >
           <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
@@ -219,10 +228,11 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           style={{
-            borderLeft: `3px solid var(--theme-color)`,
             borderTop: `3px solid var(--theme-color)`,
             borderBottom: `3px solid var(--theme-color)`,
             borderRight: `3px solid var(--theme-color)`,
+            borderLeft: `3px solid var(--theme-color)`,
+            boxShadow: `0 4px 20px var(--theme-color)`,
           }}
         >
           <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">

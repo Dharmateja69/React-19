@@ -1,22 +1,12 @@
-import axios from "axios";
-import DataSource from "./ReactDesign_PATTERNS/Challenges/Containercomponent/DataSource";
-import ProductInfo from "./ReactDesign_PATTERNS/Challenges/Containercomponent/ProductInfo";
-
-const getServerData = (url: string) => async () => {
-  const response = await axios.get(url);
-  return response.data;
-};
+import Controlled from "./ReactDesign_PATTERNS/ControlledVSUncontrolled/Controlled";
+import Uncontrolled from "./ReactDesign_PATTERNS/ControlledVSUncontrolled/Uncontrolled";
 
 const App = () => {
   return (
-    <>
-      <DataSource
-        getDatafun={getServerData("https://fakestoreapi.com/products")}
-        resourceName="products"
-      >
-        <ProductInfo /> {/* ✅ NO need to pass props manually */}
-      </DataSource>
-    </>
+    <div>
+      <Uncontrolled />
+      <Controlled />
+    </div>
   );
 };
 

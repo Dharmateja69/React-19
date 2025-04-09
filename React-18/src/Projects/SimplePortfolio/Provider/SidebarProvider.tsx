@@ -19,8 +19,11 @@ const SidebarProvider = ({ children }: { children: ReactNode }) => {
         className="w-72 border-l border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm p-4 sticky top-0 h-screen flex flex-col items-center justify-center rounded-tl-[100px] rounded-bl-[100px]"
         style={{
           borderLeft: `3px solid var(--theme-color)`,
+          borderRight: `3px solid var(--theme-color)`,
           borderTop: `3px solid var(--theme-color)`,
           borderBottom: `3px solid var(--theme-color)`,
+          boxShadow: "0 4px 20px var(--theme-color)",
+          transition: "all 0.3s ease-in-out",
         }}
       >
         <div className="flex flex-col items-center">
