@@ -17,9 +17,9 @@
 1:12:02 - Refactoring Part 2//    ||
 1:21:50 - Refactoring Part 3//    ||
 1:26:14 - Container Component Design Pattern Challenge//
-1:39:06 - Controlled vs Uncontrolled Design Pattern Theory
-1:39:50 - Controlled vs Uncontrolled Design Pattern In Action
-1:48:10 - Controlled vs Uncontrolled Design Pattern Challenge
+1:39:06 - Controlled vs Uncontrolled Design Pattern Theory//
+1:39:50 - Controlled vs Uncontrolled Design Pattern In Action//
+1:48:10 - Controlled vs Uncontrolled Design Pattern Challenge//
 2:01:40 - Higher Order Components Design Pattern Theory
 2:03:46 - Higher Order Components Design Pattern In Action
 2:14:47 - Higher Order Components Design Pattern Challenge

@@ -32,3 +32,16 @@ Uncontrolled component is a form element that maintains its own
 internal state, and React does not directly manage or track the
 value. Instead, we interact with the form element using refs to
 access its value when needed.
+
+HOC:Higher-Order Component
+===========================
+The Higher-Order Component (HOC) design pattern is used to
+reuse component logic. It is a function that takes a component as
+an argument and returns a new component that enhances the
+original one. This pattern allows us to share functionality across
+multiple components without repeating code.
+HOC **note**:
+==============
+An HOC does not modify the original component directly,
+but instead wraps it in a new component, thereby adding
+additional behavior or modifying its props.

@@ -69,16 +69,8 @@ export default function AboutPage() {
   ];
 
   return (
-    <div
-      className="p-6 border border-solid relative max-w-7xl mx-auto h-screen"
-      style={{
-        borderTop: `3px solid var(--theme-color)`,
-        borderBottom: `3px solid var(--theme-color)`,
-        borderRight: `3px solid var(--theme-color)`,
-        borderLeft: `3px solid var(--theme-color)`,
-        boxShadow: `0 4px 20px var(--theme-color)`,
-      }}
-    >
+    <div className="p-6 w-full">
+      {/* Profile Section */}
       <div className="flex flex-col md:flex-row gap-8 mb-8">
         <motion.div
           className="w-full md:w-[350px] h-[350px] border-2 border-solid border-[var(--theme-color)] rounded-lg flex flex-col items-center justify-center bg-gray-800 relative"
@@ -86,10 +78,7 @@ export default function AboutPage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           style={{
-            borderTop: `3px solid var(--theme-color)`,
-            borderBottom: `3px solid var(--theme-color)`,
-            borderRight: `3px solid var(--theme-color)`,
-            borderLeft: `3px solid var(--theme-color)`,
+            border: `3px solid var(--theme-color)`,
             boxShadow: `0 4px 20px var(--theme-color)`,
           }}
         >
@@ -198,40 +187,39 @@ export default function AboutPage() {
         </div>
       </div>
 
+      {/* Experience Section */}
+      <h1 className="text-[var(--theme-color)] text-3xl md:text-5xl font-bold mb-6">
+        My <span className="text-white">Experience</span>
+      </h1>
+
       <div className="grid md:grid-cols-2 gap-8 mt-8">
         <motion.div
-          className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow"
+          className=" p-6 rounded-lg shadow-md border "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.1 }}
           style={{
-            borderTop: `3px solid var(--theme-color)`,
-            borderBottom: `3px solid var(--theme-color)`,
-            borderRight: `3px solid var(--theme-color)`,
-            borderLeft: `3px solid var(--theme-color)`,
+            border: `3px solid var(--theme-color)`,
             boxShadow: `0 4px 20px var(--theme-color)`,
           }}
         >
           <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
             Background
           </h2>
-          <p className="text-gray-700">
-            I'm a full-stack developer with 5+ years of experience building
-            scalable web applications. Specialized in modern JavaScript
-            frameworks and cloud technologies.
+          <p className="text-white">
+            Full-stack developer with 5+ years experience building scalable web
+            applications using modern JavaScript frameworks and cloud
+            technologies.
           </p>
         </motion.div>
 
         <motion.div
-          className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow"
+          className="p-6 rounded-lg shadow-md border "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.2 }}
           style={{
-            borderTop: `3px solid var(--theme-color)`,
-            borderBottom: `3px solid var(--theme-color)`,
-            borderRight: `3px solid var(--theme-color)`,
-            borderLeft: `3px solid var(--theme-color)`,
+            border: `3px solid var(--theme-color)`,
             boxShadow: `0 4px 20px var(--theme-color)`,
           }}
         >
@@ -239,13 +227,138 @@ export default function AboutPage() {
             Education
           </h2>
           <div className="space-y-2">
-            <p className="text-gray-700 font-medium">Computer Science Degree</p>
-            <p className="text-gray-600">XYZ University, 2015-2019</p>
-            <p className="text-gray-600">GPA: 3.8/4.0</p>
+            <p className="text-white font-medium">Computer Science Degree</p>
+            <p className="text-white">XYZ University, 2015-2019</p>
+            <p className="text-white">GPA: 3.8/4.0</p>
           </div>
+        </motion.div>
+
+        <motion.div
+          className="p-6 rounded-lg shadow-md border "
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          style={{
+            border: `3px solid var(--theme-color)`,
+            boxShadow: `0 4px 20px var(--theme-color)`,
+          }}
+        >
+          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
+            Certifications
+          </h2>
+          <ul className="list-disc list-inside space-y-1 text-white ">
+            <li>AWS Certified Developer</li>
+            <li>Google Cloud Professional</li>
+            <li>React Advanced Concepts</li>
+          </ul>
+        </motion.div>
+
+        <motion.div
+          className=" p-6 rounded-lg shadow-md border "
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          style={{
+            border: `3px solid var(--theme-color)`,
+            boxShadow: `0 4px 20px var(--theme-color)`,
+          }}
+        >
+          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
+            Projects
+          </h2>
+          <p className="text-white">
+            Built 20+ production applications including e-commerce platforms,
+            SaaS products, and enterprise solutions.
+          </p>
+        </motion.div>
+      </div>
+      <br></br>
+      <h1 className="text-[var(--theme-color)] text-3xl md:text-5xl font-bold mb-6">
+        My <span className="text-white">Experience</span>
+      </h1>
+
+      <div className="grid md:grid-cols-2 gap-8 mt-8">
+        <motion.div
+          className=" p-6 rounded-lg shadow-md border "
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          style={{
+            border: `3px solid var(--theme-color)`,
+            boxShadow: `0 4px 20px var(--theme-color)`,
+          }}
+        >
+          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
+            Background
+          </h2>
+          <p className="text-white">
+            Full-stack developer with 5+ years experience building scalable web
+            applications using modern JavaScript frameworks and cloud
+            technologies.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className=" p-6 rounded-lg shadow-md border "
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          style={{
+            border: `3px solid var(--theme-color)`,
+            boxShadow: `0 4px 20px var(--theme-color)`,
+          }}
+        >
+          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
+            Education
+          </h2>
+          <div className="space-y-2">
+            <p className="text-white font-medium">Computer Science Degree</p>
+            <p className="text-white">XYZ University, 2015-2019</p>
+            <p className="text-white">GPA: 3.8/4.0</p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="p-6 rounded-lg shadow-md border "
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          style={{
+            border: `3px solid var(--theme-color)`,
+            boxShadow: `0 4px 20px var(--theme-color)`,
+          }}
+        >
+          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
+            Certifications
+          </h2>
+          <ul className="list-disc list-inside space-y-1 text-white">
+            <li>AWS Certified Developer</li>
+            <li>Google Cloud Professional</li>
+            <li>React Advanced Concepts</li>
+          </ul>
+        </motion.div>
+
+        <motion.div
+          className=" p-6 rounded-lg shadow-md border "
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          style={{
+            border: `3px solid var(--theme-color)`,
+            boxShadow: `0 4px 20px var(--theme-color)`,
+          }}
+        >
+          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
+            Projects
+          </h2>
+          <p className="text-white">
+            Built 20+ production applications including e-commerce platforms,
+            SaaS products, and enterprise solutions.
+          </p>
         </motion.div>
       </div>
 
+      {/* PDF Modal */}
       {showModal && resumeFile && (
         <motion.div
           className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
