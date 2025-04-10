@@ -1,18 +1,20 @@
-import TodoList from "./ReactDesign_PATTERNS/HoC/HOC/Components/TodoList";
-import printProps from "./ReactDesign_PATTERNS/HoC/HOC/utils/printProps";
+import { useEffect, useState } from "react";
+import MyComponent from "./ReactDesign_PATTERNS/HoC/Withloading/MyComponent";
+import withloading from "./ReactDesign_PATTERNS/HoC/Withloading/withloading";
 
-const Todowrapped = printProps(TodoList);
+const WrappedWithLoading = withloading(MyComponent);
 
 const App = () => {
-  return (
-    <div>
-      <Todowrapped a={1} b={2} c={{ name: "sidhu" }} />
-    </div>
-  );
+  const [data, setdata] = useState("");
+  const [isloading, setloading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setdata("this is data fetched!");
+      setloading(false);
+    }, 2000);
+  }, []);
+
+  return <WrappedWithLoading isloading={isloading} data={data} />;
 };
 
 export default App;
-
-// 2. Why This Pattern (HOC) Is Unique & Useful
-// The printProps function is an example of a Higher-Order Component (HOC).
-// 💡 HOC = A function that takes a component and returns a new component
