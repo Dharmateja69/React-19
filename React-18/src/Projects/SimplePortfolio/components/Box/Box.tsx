@@ -20,7 +20,7 @@ const Box = ({ title, children, delay = 0.1 }: Boxpops) => {
       }}
       style={{
         border: `3px solid var(--theme-color)`,
-        boxShadow: `-6px 6px 15px var(--theme-color)`,
+        boxShadow: `-3px 3px 8px var(--theme-color)`,
       }}
     >
       {title && (

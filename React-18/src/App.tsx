@@ -1,37 +1,37 @@
-import AdminPanel from "./ReactDesign_PATTERNS/Challenges/Hoc/components/AdminPanel";
-import withAccessControl from "./ReactDesign_PATTERNS/Challenges/Hoc/hoc/withAccessControl";
-import useAuthStore from "./ReactDesign_PATTERNS/Challenges/Hoc/store/useAuthStore";
-
-const AdminPanelWithAccess = withAccessControl(AdminPanel, {
-  allowedRoles: ["admin", "editor"],
-  injectPropsByRole: {
-    admin: {
-      showAdminFeatures: true,
-      customMessage: "Hello Admin 👑",
-    },
-    editor: {
-      customMessage: "Hello Editor ✏️",
-    },
-  },
-});
+import { Route, Routes } from "react-router-dom";
+import AboutPage from "./Projects/SimplePortfolio/Features/sections/AboutPage";
+import CertificationsPage from "./Projects/SimplePortfolio/Features/sections/CertificationsPage";
+import ErrorPage from "./Projects/SimplePortfolio/Features/sections/Error";
+import GitHubStatsPage from "./Projects/SimplePortfolio/Features/sections/GitHubStatsPage";
+import HomePage from "./Projects/SimplePortfolio/Features/sections/HomePage";
+import MusicPage from "./Projects/SimplePortfolio/Features/sections/MusicPage";
+import ProjectsPage from "./Projects/SimplePortfolio/Features/sections/ProjectsPage";
+import ResourcesPage from "./Projects/SimplePortfolio/Features/sections/ResourcesPage";
+import SkillsPage from "./Projects/SimplePortfolio/Features/sections/SkillsPage";
+import Layout from "./Projects/SimplePortfolio/Provider/Layout/Layout";
+import SidebarProvider from "./Projects/SimplePortfolio/Provider/SidebarProvider";
+import { ThemeProvider } from "./Projects/SimplePortfolio/Provider/ThemeProvider";
 
 const App = () => {
-  const { role, setRole } = useAuthStore();
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>Role-Based Access Control Demo</h1>
-      <div>
-        <label>Switch Role: </label>
-        <select value={role} onChange={(e) => setRole(e.target.value as any)}>
-          <option value="viewer">Viewer</option>
-          <option value="editor">Editor</option>
-          <option value="admin">Admin</option>
-        </select>
-      </div>
-
-      <hr />
-
-      <AdminPanelWithAccess />
+    <div className="bg-gray-800 min-h-screen">
+      <SidebarProvider>
+        <ThemeProvider>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/certifications" element={<CertificationsPage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/github" element={<GitHubStatsPage />} />
+              <Route path="/resources" element={<ResourcesPage />} />
+              <Route path="/music" element={<MusicPage />} />
+              <Route path="/skills" element={<SkillsPage />} />
+              <Route path="/*" element={<ErrorPage />} />
+            </Route>
+          </Routes>
+        </ThemeProvider>
+      </SidebarProvider>
     </div>
   );
 };

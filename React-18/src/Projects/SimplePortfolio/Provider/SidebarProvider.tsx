@@ -7,6 +7,9 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import ButtonSidebar from "../components/Button/ButtonSidebar";
+import Ancortags from "../components/LinksA/Ancortags";
+// Adjust the path as needed
 
 const SidebarProvider = ({ children }: { children: ReactNode }) => {
   const navigate = useNavigate();
@@ -22,8 +25,15 @@ const SidebarProvider = ({ children }: { children: ReactNode }) => {
         className="w-[18rem] fixed right-0 top-0 h-screen z-50 border-l border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm p-4 flex flex-col items-center justify-center rounded-tl-[100px] rounded-bl-[100px]"
         style={{
           borderLeft: `10px solid var(--theme-color)`,
-          boxShadow: `0 4px 20px var(--theme-color)`,
           transition: `all 0.3s ease-in-out`,
+          background: `
+          linear-gradient(#0a0a23, #0a0a23),
+          radial-gradient(circle at 30% 30%, rgba(0, 200, 255, 0.1) 0%, transparent 60%),
+          radial-gradient(ellipse at 70% 80%, rgba(180, 0, 255, 0.2) 0%, transparent 70%)
+        `,
+          backgroundBlendMode: "screen",
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
         }}
       >
         <div className="flex flex-col items-center">
@@ -34,105 +44,63 @@ const SidebarProvider = ({ children }: { children: ReactNode }) => {
           <nav className="w-full">
             <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-300 flex flex-col items-center">
               <li className="w-full text-center">
-                <button
+                <ButtonSidebar
+                  label="About"
+                  icon="📌"
                   onClick={() => handleNavigation("/about")}
-                  className="flex items-center justify-center gap-2 hover:text-[var(--theme-color)] transition-colors w-full py-2 px-4 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  📌 About
-                </button>
+                />
               </li>
               <li className="w-full text-center">
-                <button
+                <ButtonSidebar
+                  label="Skills"
+                  icon="🛠️"
                   onClick={() => handleNavigation("/skills")}
-                  className="flex items-center justify-center gap-2 hover:text-[var(--theme-color)] transition-colors w-full py-2 px-4 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  🛠️ Skills
-                </button>
+                />
               </li>
               <li className="w-full text-center">
-                <button
+                <ButtonSidebar
+                  label="Projects"
+                  icon="💼"
                   onClick={() => handleNavigation("/projects")}
-                  className="flex items-center justify-center gap-2 hover:text-[var(--theme-color)] transition-colors w-full py-2 px-4 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  💼 Projects
-                </button>
+                />
               </li>
               <li className="w-full text-center">
-                <button
+                <ButtonSidebar
+                  label="Certifications"
+                  icon="📜"
                   onClick={() => handleNavigation("/certifications")}
-                  className="flex items-center justify-center gap-2 hover:text-[var(--theme-color)] transition-colors w-full py-2 px-4 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  📜 Certifications
-                </button>
+                />
               </li>
               <li className="w-full text-center">
-                <button
+                <ButtonSidebar
+                  label="GitHub Stats"
+                  icon="🌐"
                   onClick={() => handleNavigation("/github")}
-                  className="flex items-center justify-center gap-2 hover:text-[var(--theme-color)] transition-colors w-full py-2 px-4 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  🌐 GitHub Stats
-                </button>
+                />
               </li>
               <li className="w-full text-center">
-                <button
+                <ButtonSidebar
+                  label="Resources"
+                  icon="📚"
                   onClick={() => handleNavigation("/resources")}
-                  className="flex items-center justify-center gap-2 hover:text-[var(--theme-color)] transition-colors w-full py-2 px-4 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  📚 Resources
-                </button>
+                />
               </li>
               <li className="w-full text-center">
-                <button
+                <ButtonSidebar
+                  label="Music"
+                  icon="🎵"
                   onClick={() => handleNavigation("/music")}
-                  className="flex items-center justify-center gap-2 hover:text-[var(--theme-color)] transition-colors w-full py-2 px-4 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  🎵 Music
-                </button>
+                />
               </li>
             </ul>
           </nav>
 
           <div className="flex justify-center items-center gap-4 mt-10 text-[var(--theme-color)] text-2xl">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transition-transform"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transition-transform"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transition-transform"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transition-transform"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110 transition-transform"
-            >
-              <FaLinkedin />
-            </a>
+            <Ancortags href="https://facebook.com" icon={<FaFacebook />} />
+            <Ancortags href="https://instagram.com" icon={<FaInstagram />} />
+            <Ancortags href="https://twitter.com" icon={<FaTwitter />} />
+            <Ancortags href="https://github.com" icon={<FaGithub />} />
+            <Ancortags href="https://linkedin.com" icon={<FaLinkedin />} />
           </div>
         </div>
       </aside>

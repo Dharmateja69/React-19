@@ -5,3 +5,9 @@
 :root {
   --theme-color: #3b82f6;
 }
+@layer base {
+  html,
+  body {
+    cursor: url("/public/cursor.png"), auto;
+  }
+}

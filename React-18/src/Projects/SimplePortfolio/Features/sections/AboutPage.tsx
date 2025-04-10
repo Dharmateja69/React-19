@@ -1,10 +1,19 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
+import {
+  FaAward,
+  FaCode,
+  FaLaptopCode,
+  FaRocket,
+  FaTrophy,
+  FaUserGraduate,
+} from "react-icons/fa";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import Box from "../../components/Box/Box";
-
+import SkillProgress from "../../components/skills/SkillProgress";
+import StatCard from "../../components/skills/StatCard";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/build/pdf.worker.min.js`;
 
 export default function AboutPage() {
@@ -79,7 +88,7 @@ export default function AboutPage() {
       >
         <span className="text-[var(--theme-color)]">About</span> Me
         <motion.span
-          className="inline-block ml-1"
+          className="inline-block ml-1 text-[var(--theme-color)]"
           animate={{
             x: [0, -4, 4, -4, 4, 0], // keyframes to shake left and right
             rotate: [0, -5, 5, -5, 5, 0],
@@ -237,7 +246,7 @@ export default function AboutPage() {
       </div>
       <br></br>
       <h1 className="text-[var(--theme-color)] text-3xl md:text-5xl font-bold mb-6">
-        My <span className="text-white font-mono">Skills</span>
+        My <span className="text-white font-mono">Education</span>
       </h1>
 
       <div className="grid md:grid-cols-2 gap-8 mt-8">
@@ -268,7 +277,47 @@ export default function AboutPage() {
           </p>
         </Box>
       </div>
+      <br />
+      {/* My skills */}
+      <h1 className="text-[var(--theme-color)] text-3xl md:text-5xl font-bold mb-6">
+        My <span className="text-white font-mono">Skills</span>
+      </h1>
+      <div className="flex flex-col lg:flex-row justify-between gap-10 p-4">
+        {/* Left Side */}
+        <div className="w-full lg:w-1/2">
+          <SkillProgress label="Competitive Programming" percent={80} />
+          <SkillProgress label="Full Stack Development" percent={89} />
+          <SkillProgress label="DBMS" percent={75} />
+          <SkillProgress label="Data Structures & Algorithms" percent={85} />
+          <SkillProgress label="Operating Systems" percent={70} />
+        </div>
 
+        {/* Right Side */}
+        <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+          <StatCard
+            icon={<FaUserGraduate />}
+            title="Years of Experience"
+            value=">2"
+          />
+          <StatCard icon={<FaCode />} title="University Websites" value=">3" />
+          <StatCard
+            icon={<FaAward />}
+            title="Global Certifications"
+            value=">3"
+          />
+          <StatCard
+            icon={<FaRocket />}
+            title="Projects Completed"
+            value=">10+"
+          />
+          <StatCard
+            icon={<FaLaptopCode />}
+            title="Hackathons Attended"
+            value=">5"
+          />
+          <StatCard icon={<FaTrophy />} title="CodeChef Contests" value=">40" />
+        </div>
+      </div>
       {/* PDF Modal */}
       {showModal && resumeFile && (
         <motion.div

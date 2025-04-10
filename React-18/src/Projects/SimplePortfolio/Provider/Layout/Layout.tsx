@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import ColorPicker from "../../components/Ui/ColorPicker";
+import Footer from "../Footer";
 
 export default function Layout() {
   return (
@@ -20,7 +21,15 @@ export default function Layout() {
     >
       <div className="w-[82rem] mx-auto pr-[18rem]">
         <ColorPicker />
-        <Outlet />
+        {/* Main page content */}
+        <div className="flex-grow">
+          <Outlet />
+        </div>
+
+        {/* Footer stays at the bottom */}
+        <footer className="mt-10 py-6 border-t border-gray-600 text-center text-sm">
+          <Footer />
+        </footer>
       </div>
     </div>
   );
