@@ -1,39 +1,18 @@
-import { Route, Routes } from "react-router-dom";
-import AboutPage from "./Projects/SimplePortfolio/Features/sections/AboutPage";
-import CertificationsPage from "./Projects/SimplePortfolio/Features/sections/CertificationsPage";
-import ErrorPage from "./Projects/SimplePortfolio/Features/sections/Error";
-import GitHubStatsPage from "./Projects/SimplePortfolio/Features/sections/GitHubStatsPage";
-import HomePage from "./Projects/SimplePortfolio/Features/sections/HomePage";
-import MusicPage from "./Projects/SimplePortfolio/Features/sections/MusicPage";
-import ProjectsPage from "./Projects/SimplePortfolio/Features/sections/ProjectsPage";
-import ResourcesPage from "./Projects/SimplePortfolio/Features/sections/ResourcesPage";
-import SkillsPage from "./Projects/SimplePortfolio/Features/sections/SkillsPage";
-import Layout from "./Projects/SimplePortfolio/Provider/Layout/Layout";
-import SidebarProvider from "./Projects/SimplePortfolio/Provider/SidebarProvider";
-import { ThemeProvider } from "./Projects/SimplePortfolio/Provider/ThemeProvider";
+import TodoList from "./ReactDesign_PATTERNS/HoC/HOC/Components/TodoList";
+import printProps from "./ReactDesign_PATTERNS/HoC/HOC/utils/printProps";
+
+const Todowrapped = printProps(TodoList);
 
 const App = () => {
   return (
-    <div className="flex-1 h-screen ">
-      <SidebarProvider>
-        <ThemeProvider>
-          <Routes>
-            <Route element={<Layout />}>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/certifications" element={<CertificationsPage />} />
-              <Route path="/projects" element={<ProjectsPage />} />
-              <Route path="/github" element={<GitHubStatsPage />} />
-              <Route path="/resources" element={<ResourcesPage />} />
-              <Route path="/music" element={<MusicPage />} />
-              <Route path="/skills" element={<SkillsPage />} />
-              <Route path="/*" element={<ErrorPage />} />
-            </Route>
-          </Routes>
-        </ThemeProvider>
-      </SidebarProvider>
+    <div>
+      <Todowrapped a={1} b={2} c={{ name: "sidhu" }} />
     </div>
   );
 };
 
 export default App;
+
+// 2. Why This Pattern (HOC) Is Unique & Useful
+// The printProps function is an example of a Higher-Order Component (HOC).
+// 💡 HOC = A function that takes a component and returns a new component
