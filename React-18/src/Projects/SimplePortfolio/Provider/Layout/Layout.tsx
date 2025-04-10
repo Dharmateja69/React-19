@@ -9,9 +9,9 @@ export default function Layout() {
       [&::-webkit-scrollbar-thumb]:rounded-full [scrollbar-gutter:stable]"
       style={{
         background: `
-          linear-gradient(#000000, #000000),
-          radial-gradient(circle at 50% 50%, rgba(255, 255, 0, 0.08) 0%, transparent 60%),
-          radial-gradient(ellipse at 50% 100%, rgba(255, 0, 0, 0.15) 0%, transparent 70%)
+          linear-gradient(#0a0a23, #0a0a23),
+          radial-gradient(circle at 30% 30%, rgba(0, 200, 255, 0.1) 0%, transparent 60%),
+          radial-gradient(ellipse at 70% 80%, rgba(180, 0, 255, 0.2) 0%, transparent 70%)
         `,
         backgroundBlendMode: "screen",
         backgroundAttachment: "fixed",

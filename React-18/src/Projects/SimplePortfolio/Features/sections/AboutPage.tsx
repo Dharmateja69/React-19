@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
+import Box from "../../components/Box/Box";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/build/pdf.worker.min.js`;
 
@@ -70,6 +71,29 @@ export default function AboutPage() {
 
   return (
     <div className="p-6 w-full">
+      <motion.h1
+        className="text-3xl font-bold mb-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2 }}
+      >
+        <span className="text-[var(--theme-color)]">About</span> Me
+        <motion.span
+          className="inline-block ml-1"
+          animate={{
+            x: [0, -4, 4, -4, 4, 0], // keyframes to shake left and right
+            rotate: [0, -5, 5, -5, 5, 0],
+          }}
+          transition={{
+            repeat: Infinity, // infinite loop
+            duration: 0.6, // total duration of one shake cycle
+            repeatDelay: 2, // wait time before it shakes again
+          }}
+        >
+          !
+        </motion.span>
+      </motion.h1>
+
       {/* Profile Section */}
       <div className="flex flex-col md:flex-row gap-8 mb-8">
         <motion.div
@@ -79,7 +103,7 @@ export default function AboutPage() {
           transition={{ duration: 0.5 }}
           style={{
             border: `3px solid var(--theme-color)`,
-            boxShadow: `0 4px 20px var(--theme-color)`,
+            boxShadow: `-6px 6px 15px var(--theme-color)`,
           }}
         >
           {profileImage ? (
@@ -121,15 +145,6 @@ export default function AboutPage() {
         </motion.div>
 
         <div className="flex-1">
-          <motion.h1
-            className="text-3xl font-bold text-[var(--theme-color)] mb-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            About Me
-          </motion.h1>
-
           <div className="space-y-4">
             {personalDetails.map((detail) => (
               <div key={detail.label}>
@@ -189,173 +204,69 @@ export default function AboutPage() {
 
       {/* Experience Section */}
       <h1 className="text-[var(--theme-color)] text-3xl md:text-5xl font-bold mb-6">
-        My <span className="text-white">Experience</span>
+        My <span className="text-white font-mono">Experience</span>
       </h1>
 
       <div className="grid md:grid-cols-2 gap-8 mt-8">
-        <motion.div
-          className=" p-6 rounded-lg shadow-md border "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          style={{
-            border: `3px solid var(--theme-color)`,
-            boxShadow: `0 4px 20px var(--theme-color)`,
-          }}
-        >
-          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
-            Background
-          </h2>
-          <p className="text-white">
-            Full-stack developer with 5+ years experience building scalable web
-            applications using modern JavaScript frameworks and cloud
-            technologies.
-          </p>
-        </motion.div>
+        <Box title="Background" delay={0.1}>
+          Full-stack developer with 5+ years experience building scalable web
+          applications using modern JavaScript frameworks and cloud
+          technologies.
+        </Box>
 
-        <motion.div
-          className="p-6 rounded-lg shadow-md border "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          style={{
-            border: `3px solid var(--theme-color)`,
-            boxShadow: `0 4px 20px var(--theme-color)`,
-          }}
-        >
-          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
-            Education
-          </h2>
+        <Box title="Education" delay={0.2}>
           <div className="space-y-2">
             <p className="text-white font-medium">Computer Science Degree</p>
             <p className="text-white">XYZ University, 2015-2019</p>
             <p className="text-white">GPA: 3.8/4.0</p>
           </div>
-        </motion.div>
-
-        <motion.div
-          className="p-6 rounded-lg shadow-md border "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          style={{
-            border: `3px solid var(--theme-color)`,
-            boxShadow: `0 4px 20px var(--theme-color)`,
-          }}
-        >
-          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
-            Certifications
-          </h2>
+        </Box>
+        <Box title="Certifications" delay={0.1}>
           <ul className="list-disc list-inside space-y-1 text-white ">
             <li>AWS Certified Developer</li>
             <li>Google Cloud Professional</li>
             <li>React Advanced Concepts</li>
           </ul>
-        </motion.div>
-
-        <motion.div
-          className=" p-6 rounded-lg shadow-md border "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          style={{
-            border: `3px solid var(--theme-color)`,
-            boxShadow: `0 4px 20px var(--theme-color)`,
-          }}
-        >
-          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
-            Projects
-          </h2>
+        </Box>
+        <Box title="Projects" delay={0.2}>
           <p className="text-white">
             Built 20+ production applications including e-commerce platforms,
             SaaS products, and enterprise solutions.
           </p>
-        </motion.div>
+        </Box>
       </div>
       <br></br>
       <h1 className="text-[var(--theme-color)] text-3xl md:text-5xl font-bold mb-6">
-        My <span className="text-white">Experience</span>
+        My <span className="text-white font-mono">Skills</span>
       </h1>
 
       <div className="grid md:grid-cols-2 gap-8 mt-8">
-        <motion.div
-          className=" p-6 rounded-lg shadow-md border "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          style={{
-            border: `3px solid var(--theme-color)`,
-            boxShadow: `0 4px 20px var(--theme-color)`,
-          }}
-        >
-          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
-            Background
-          </h2>
-          <p className="text-white">
-            Full-stack developer with 5+ years experience building scalable web
-            applications using modern JavaScript frameworks and cloud
-            technologies.
-          </p>
-        </motion.div>
+        <Box title="Background" delay={0.1}>
+          Full-stack developer with 5+ years experience building scalable web
+          applications using modern JavaScript frameworks and cloud
+          technologies.
+        </Box>
 
-        <motion.div
-          className=" p-6 rounded-lg shadow-md border "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          style={{
-            border: `3px solid var(--theme-color)`,
-            boxShadow: `0 4px 20px var(--theme-color)`,
-          }}
-        >
-          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
-            Education
-          </h2>
+        <Box title="Education" delay={0.2}>
           <div className="space-y-2">
             <p className="text-white font-medium">Computer Science Degree</p>
             <p className="text-white">XYZ University, 2015-2019</p>
             <p className="text-white">GPA: 3.8/4.0</p>
           </div>
-        </motion.div>
-
-        <motion.div
-          className="p-6 rounded-lg shadow-md border "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          style={{
-            border: `3px solid var(--theme-color)`,
-            boxShadow: `0 4px 20px var(--theme-color)`,
-          }}
-        >
-          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
-            Certifications
-          </h2>
-          <ul className="list-disc list-inside space-y-1 text-white">
+        </Box>
+        <Box title="Certifications" delay={0.1}>
+          <ul className="list-disc list-inside space-y-1 text-white ">
             <li>AWS Certified Developer</li>
             <li>Google Cloud Professional</li>
             <li>React Advanced Concepts</li>
           </ul>
-        </motion.div>
-
-        <motion.div
-          className=" p-6 rounded-lg shadow-md border "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          style={{
-            border: `3px solid var(--theme-color)`,
-            boxShadow: `0 4px 20px var(--theme-color)`,
-          }}
-        >
-          <h2 className="text-xl font-semibold mb-4 text-[var(--theme-color)]">
-            Projects
-          </h2>
+        </Box>
+        <Box title="Projects" delay={0.2}>
           <p className="text-white">
             Built 20+ production applications including e-commerce platforms,
             SaaS products, and enterprise solutions.
           </p>
-        </motion.div>
+        </Box>
       </div>
 
       {/* PDF Modal */}
