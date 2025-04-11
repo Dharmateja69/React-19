@@ -20,12 +20,12 @@
 1:39:06 - Controlled vs Uncontrolled Design Pattern Theory//
 1:39:50 - Controlled vs Uncontrolled Design Pattern In Action//
 1:48:10 - Controlled vs Uncontrolled Design Pattern Challenge//
-2:01:40 - Higher Order Components Design Pattern Theory
-2:03:46 - Higher Order Components Design Pattern In Action
-2:14:47 - Higher Order Components Design Pattern Challenge
-2:47:19 - Custom Hooks Theory
-2:28:34 - useFetch Custom Hook
-2:36:05 - Small Refactor
+2:01:40 - Higher Order Components Design Pattern Theory//
+2:03:46 - Higher Order Components Design Pattern In Action//
+2:14:47 - Higher Order Components Design Pattern Challenge//
+2:47:19 - Custom Hooks Theory//
+2:28:34 - useFetch Custom Hook//
+2:36:05 - Small Refactor//
 2:37:40 - useForm Custom Hook
 2:47:24 - useLocalStorage Custom Hook
 2:58:36 - useModal Custom Hook

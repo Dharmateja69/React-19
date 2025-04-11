@@ -45,3 +45,12 @@ HOC **note**:
 An HOC does not modify the original component directly,
 but instead wraps it in a new component, thereby adding
 additional behavior or modifying its props.
+
+Custom Hooks:
+=============
+Custom hooks are a powerful feature that allows us to
+encapsulate and reuse logic across components. They help to
+extract component logic into reusable functions, making code
+cleaner, more modular, and easier to maintain.
+useHookName();
+============
