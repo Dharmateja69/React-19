@@ -54,3 +54,8 @@ extract component logic into reusable functions, making code
 cleaner, more modular, and easier to maintain.
 useHookName();
 ============
+Factory:
+========
+The Factory Design Pattern is a way to create objects without
+specifying exactly what kind of object you're creating. It's like having a "factory" that makes objects for us, based on some
+conditions or inputs.
