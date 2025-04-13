@@ -73,3 +73,47 @@ This pattern is useful when you want to create a component that
 has multiple subcomponents, but you want to maintain the ability
 to customize or control the behavior of each subcomponent from
 the parent or container.
+
+Slots:
+=====
+Slots design pattern allows a component to accept
+dynamic content from its parent, and place that content
+into specific areas or sections of the component.
+
+The Slots Design Pattern is not a formal or native concept like
+some other patterns In React.js, but it draws inspiration from the
+way slots work in web components (especially in frameworks like
+Vue.js or the Shadow DOM) or from pattern ideas in other Ul
+frameworks.
+
+Default slots:
+===============
+Default slot is known as children property. Whatever you
+pass between the opening and closing tag of a component
+is passed as children property to that component and acts
+as the default slot.
+
+Named slots:
+===========
+Named slots/props are simply properties that we pass to
+a component, each with a specific, descriptive name.
+These named props allow the child component to access
+and use these values based on the names they are given.
+
+Compound Slots:
+================
+The slots pattern can be applied to compound
+components by defining "named slots" (using props) and
+allowing the child components to customize specific areas
+of a compound component. This way, each subcomponent
+acts like a slot that can be filled with different content.
+
+Render Props:
+============
+Render Props pattern is used to share code between
+components by passing a function as a prop to a
+component. The function, which is typically referred to as
+the "render prop" returns a React element that gets
+rendered. This pattern allows components to be more
+flexible and reusable, as the parent component can
+control the rendering of content in its child component.

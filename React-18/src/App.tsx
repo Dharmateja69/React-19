@@ -1,28 +1,25 @@
-import { useState } from "react";
-import Modal from "./ReactDesign_PATTERNS/Challenges/CompoundComponents/Modal";
+import Datafetcher from "./ReactDesign_PATTERNS/Challenges/PropRenders/Datafetcher/Datafetcher";
 
 const App = () => {
-  const [isopen, setopne] = useState(false);
-
   return (
-    <>
-      {!isopen && (
-        <button
-          className="bg-black text-white border border-solid rounded px-10 py-10"
-          onClick={() => setopne(true)}
-        >
-          Click
-        </button>
-      )}
-
-      {isopen && (
-        <Modal onClose={() => setopne(false)}>
-          <Modal.title>This is the Modal Title</Modal.title>
-          <Modal.Body>This is the Modal Body</Modal.Body>
-          <Modal.footer>This is the Modal Footer</Modal.footer>
-        </Modal>
-      )}
-    </>
+    <div>
+      <Counter render={(count: number) => <p>The count is :{count}</p>} />
+      <MouseTracker
+        tracker={(position: any) => (
+          <p>
+            The position:X:{position.x},Y:{position.y}
+          </p>
+        )} */}
+      {/* />
+      <Datafetcher
+        users={(user: any) => (
+          <div>
+            <p>The Name:{user.name}</p>
+            <p>The Email:{user.email}</p>
+          </div>
+        )}
+      />
+    </div>
   );
 };
 
