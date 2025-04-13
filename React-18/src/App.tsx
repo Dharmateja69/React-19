@@ -1,10 +1,11 @@
-import Withhook from "./ReactDesign_PATTERNS/CustomeHooks/useLocalstorage/withlocalhook/Withhook";
+import Withhook from "./ReactDesign_PATTERNS/CustomeHooks/useModal/Withmodal/Withhook";
 
 const App = () => {
   return (
-    <>
+    <div>
+      {/* <Modal /> */}
       <Withhook />
-    </>
+    </div>
   );
 };
 
