@@ -1,14 +1,28 @@
-import Card from "./ReactDesign_PATTERNS/Compoundcomponent/Card";
+import { useState } from "react";
+import Modal from "./ReactDesign_PATTERNS/Challenges/CompoundComponents/Modal";
 
 const App = () => {
+  const [isopen, setopne] = useState(false);
+
   return (
-    <div>
-      <Card>
-        <Card.title>Something Title for the card</Card.title>
-        <Card.Content>Something Content for the card</Card.Content>
-        <Card.footer>Something Footer for the card</Card.footer>
-      </Card>
-    </div>
+    <>
+      {!isopen && (
+        <button
+          className="bg-black text-white border border-solid rounded px-10 py-10"
+          onClick={() => setopne(true)}
+        >
+          Click
+        </button>
+      )}
+
+      {isopen && (
+        <Modal onClose={() => setopne(false)}>
+          <Modal.title>This is the Modal Title</Modal.title>
+          <Modal.Body>This is the Modal Body</Modal.Body>
+          <Modal.footer>This is the Modal Footer</Modal.footer>
+        </Modal>
+      )}
+    </>
   );
 };
 
