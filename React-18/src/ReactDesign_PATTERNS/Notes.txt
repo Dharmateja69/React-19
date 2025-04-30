@@ -117,3 +117,69 @@ the "render prop" returns a React element that gets
 rendered. This pattern allows components to be more
 flexible and reusable, as the parent component can
 control the rendering of content in its child component.
+
+
+TanStack Query:
+================
+TanStack Query, previously known as React Query, is a popular
+library used in React applications for managing server state and
+handling asynchronous data fetching. It provides a set of
+hooks that simplify the process of fetching, caching,
+synchronizing, and updating data in a React app.
+
+Framework Agnostic:
+====================
+TanStack Query is not limited to React, it has been expanded to
+support other frameworks and libraries, but its most common
+use is within React applications.
+
+Query Client:
+=============
+The Query Client is the core object in TanStack Query that
+manages the state and configuration of queries and mutations
+in our application. It serves as the primary API for interacting
+with the library, enabling us to perform actions like fetching
+data, managing cache, and setting global configurations.
+
+Deduplication:
+===============
+Deduplication means that if we try to fetch the same data
+multiple times at once, it will only send one request instead of
+many. Deduplication helps avoid asking for the same data over
+and over again!
+
+Stale Time:
+===========
+Stale time refers to the duration during which cached data is
+considered fresh. During this period, the data is served from the
+cache without triggering a background refetch, which can
+improve performance and reduce unnecessary network
+requests.
+
+
+refetchlnterval:
+================
+refetchlnterval is an option used to automatically refetch data
+at a specified interval. It allows us to keep our data fresh
+without requiring manual intervention.
+
+useQueries:
+===========
+useQueries is a hook that allows us to execute multiple queries
+in parallel and manage their results in a unified way. This is
+useful when you need to fetch data from multiple sources or
+endpoints in a single component but want to handle each
+queryls state separately.
+
+
+useMutation:
+=============
+useMutation is a hook used to handle mutative operations,
+operations that create, update, or delete data on a backend or
+remote server. Unlike useQuery, which is used for fetching and
+caching data, useMutation is specifically designed for actions
+that change data.
+
+Race Condition:
+================
+A race condition happens when multiple asynchronous operations run in parallel, and the results arrive in a different order than expected, potentially causing incorrect or outdated data to be rendered.
