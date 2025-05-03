@@ -1,13 +1,14 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import "./index.css";
-const queryclient = new QueryClient();
+import SidebarProvider from "./Projects/SimplePortfolio/Provider/SidebarProvider.tsx";
+
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <QueryClientProvider client={queryclient}>
+  // ✅ CORRECT (main.tsx or App.tsx)
+  <BrowserRouter>
+    <SidebarProvider>
       <App />
-    </QueryClientProvider>
-  </StrictMode>
+    </SidebarProvider>
+  </BrowserRouter>
 );

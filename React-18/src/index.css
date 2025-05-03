@@ -5,7 +5,7 @@
 :root {
   --theme-color: #3b82f6;
 }
-/* @layer base {
+@layer base {
   html,
   body,
   button,
@@ -16,4 +16,4 @@
   select {
     cursor: url("/public/cursor.png"), auto;
   }
-} */
+}

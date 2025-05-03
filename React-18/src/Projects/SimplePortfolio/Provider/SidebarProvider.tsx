@@ -13,7 +13,7 @@ import Ancortags from "../components/LinksA/Ancortags";
 
 const menuItems = [
   { label: "About", icon: "📌", path: "/about" },
-  { label: "Skills", icon: "🛠️", path: "/skills" },
+  { label: "Acheivemnts", icon: "📈", path: "/achievements" },
   { label: "Projects", icon: "💼", path: "/projects" },
   { label: "Certifications", icon: "📜", path: "/certifications" },
   { label: "GitHub Stats", icon: "🌐", path: "/github" },
@@ -49,11 +49,11 @@ const SidebarProvider = ({ children }: { children: ReactNode }) => {
       >
         <div className="flex flex-col items-center">
           <h2 className="font-semibold text-lg text-[var(--theme-color)] mb-6 text-center">
-            Sidhu!
+            <span>{`<sidhu />`}</span>
           </h2>
 
           <nav className="w-full">
-            <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-300 flex flex-col items-start w-full">
+            <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-300 flex flex-col items-stretch w-full">
               {menuItems.map((item, index) => {
                 const isActive = location.pathname === item.path;
                 return (

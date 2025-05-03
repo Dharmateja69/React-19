@@ -183,3 +183,177 @@ that change data.
 Race Condition:
 ================
 A race condition happens when multiple asynchronous operations run in parallel, and the results arrive in a different order than expected, potentially causing incorrect or outdated data to be rendered.
+
+TESTING?
+Testing is the process of checking a program or
+application to make sure it works correctly. It's like
+double-checking your work to ensure everything
+functions as expected.
+AUTOMATED
+TESTS TYPES
+—+
+UNIT TESTS
+INTEGRATION TESTS
+END-TO-END TESTS
+
+unit tests:
+===========
+Unit testing is where developers test individual components
+of an application, like functions or classes, to ensure they
+work as expected. These tests focus on small, isolated
+parts of the code.
+
+INTEGRATION TESTS:
+================
+Integration testing is about checking how different parts of
+an application work together. While unit tests focus on
+individual components, Integration tests ensure that
+modules, databases, APIs, and other services interact
+correctly.
+
+End-to-end testing simulates real user scenarios to make
+sure the entire application works as expected from start to
+finish. It tests the whole system, including front-end, back-
+end, and any external services, to ensure everything
+integrates and functions properly in a real-world
+environment.
+
+frameworks:
+=========
+Jest
+Vitest:fast
+Cypress
+Playwright
+vitest:
+=======
+AAA pattern
+============
+0 Arrange
+Set up everything needed for the test
+( variables, mock data, etc )
+O Act
+Perform the action that you want to
+test (e.g., call a function).
+O Assert
+Verify that the result of the action is
+what you expect.
+
+TDD
+===
+TDD Test-Driven Development is a way of writing
+code where you first write a test, then write the
+code to make the test pass, and finally refactor
+your code while keeping the test passing.
+
+WRITE A TEST
+WRITE CODE
+MisIAKE THE TEST PASS
+REFACTOR
+REPEAT
+
+
+
+POSITIVE
+Check if the system behaves as expected when provided with valid inputs.
+In positive testing, you are testing the system with correct or valid inputs,
+ensuring that the system functions as expected when used correctly.
+NEGATIVE
+Check if the system handles invalid or unexpected inputs correctly.
+In negative testing, you are providing incorrect or invalid inputs to ensure that
+the system can handle error scenarios gracefully and that it doesn't crash or
+behave unexpectedly.
+
+BOUNDARY
+TESTING
+Focuses on testing the edges or boundaries of input
+values. The primary idea behind boundary testing is that
+errors are more likely to occur at the boundaries (the
+extreme ends) of input ranges, rather than in the middle. By
+testing the boundaries of input values, you can find defects
+that occur when the system handles these edge cases.
+Types:
+======
+ Minimum Boundary
+Test the smallest possible valid value.
+ Maximum Boundary
+Test the largest possible valid value.
+Just Inside Boundary
+Test just above the minimum or just below the maximum.
+ Just Outside Boundary
+ Test just below the minimum or just above the maximum (to
+ensure invalid values are correctly rejected).
+
+
+Consider a simple function that accepts
+a username and password where
+The username must be at least 3 characters.
+The password must be at least 6 characters.
+
+username Boundary
+Minimum valid username: 3 characters
+Minimum invalid username: 2 characters
+Just inside valid: 3 characters
+Just outside invalid: 1 character
+
+Password Boundary
+Minimum valid password: 6 characters
+Minimum invalid password: 5 characters
+Just inside valid: 6 characters
+Just outside invalid: 4 characters
+
+
+PARAMETERIZED
+TESTING
+Parameterized tests allow you to run the same test with
+multiple sets of inputs without duplicating the test logic.
+Instead of writing multiple similar test cases for different
+inputs, you define the inputs as a set of parameters and the
+test will automatically run for each combination of values.
+
+
+getByRoIe
+Is a query method used to find DOM
+elements by their ARIA role.
+
+ARIA (Accessible Rich Internet Applications) roles
+explain what an element does or its purpose, especially for
+accessibility. This method is part of a set of tools used to
+test how accessible and interactive your app is. It helps to
+understand how users with screen readers or other
+assistive technologies would use your app.
+getByRole( role, options )
+
+Role:A string representing the ARIA role you're looking for.
+Common roles include button, link, textbox, heading, etc.
+Options:An object that can include additional
+configurations.
+
+Why getByRole?
+Accessibility
+It encourages developers to think about the accessibility of their components.
+ Reliability
+
+Queries based on ARIA roles are less likely to break when the internal structure
+of the component changes.
+Best Practices
+It helps align tests with how users interact with your app
+( screen readers, keyboard navigation ).
+
+ByPlaceholderText
+ByDisplayValue
+ByLabelText
+ByAltText
+ByTestld
+ByRole
+ByTitle
+ByText
+
+
+| **Query Type**   | **When to Use**                                   | **Returns**                 | **Throws Error** |
+|------------------|---------------------------------------------------|-----------------------------|------------------|
+| `getBy*`         | When you expect the element to be in the DOM      | Single element              | Yes              |
+| `queryBy*`       | When the element may or may not exist             | Single element or `null`    | No               |
+| `findBy*`        | When the element is asynchronous (appears later)  | `Promise` (single element)  | Yes              |
+| `getAllBy*`      | When you expect multiple elements                 | Array of elements           | Yes              |
+| `queryAllBy*`    | When multiple elements may or may not exist       | Array of elements or empty  | No               |
+| `findAllBy*`     | When multiple elements appear asynchronously      | `Promise` (array of elements)| Yes             |

@@ -58,44 +58,44 @@
 5:34:42 - useMutation Theory//
 5:35:53 - useMutation In Action//
 5:46:34 - Paginations In Tanstack Query//
-5:54:21 - What is Testing
-5:54:39 - Types Of Automated Testing
-5:57:05 - Testing Frameworks
-5:57:52 - Let's make a Testing Setup
-6:00:09 - Testing Basic Code
-6:04:46 - Basic Testing Syntax Theory
-6:08:18 - Testing Math Utils
-6:15:39 - Testing Challenges Setup
-6:17:11 - Math Utils Challenges
-6:23:42 - AAA Pattern Theory
-6:25:55 - AAA Pattern In Action
-6:27:21 - String Utils Testing
-6:33:43 - String Utils Testing Challenges
-6:38:45 - Array Utils Testing 
-6:44:17 - Array Utils Testing Challenges
-6:49:18 - Object Utils Testing
-6:56:38 - Object Utils Testing Challenges
-7:04:08 - Test Driven Development ( TDD ) Theory
-7:05:31 - TDD In Action
-7:10:22 - Matchers Complete Guide
-7:23:26 - Positive vs Negative Testing Theory
-7:25:27- Positive vs Negative Testing In Action
-7:28:01 - Boundary Testing Theory
-7:30:01 - Boundary Testing In Action
-7:40:03 - Parameterized Testing Theory
-7:14:07 - Parameterized Testing In Action
-7:46:34 - Testing Async Code
-7:53:27 - React Testing Setup
-8:05:49 - Component with Props Testing 
-8:12:33 - List Component Testing
-8:18:44 - I Love getByRole
-8:21:18 - getByRole In Action
-8:28:08 - Screen Object Methods Theory
-8:32:09 - All getBys
-8:39:35 - All getAllBys
-8:53:23 - All queryBys
-9:01:33 - All queryAllBys
-9:09:22 - All findBys
-9:18:31 - All findAllBys
-9:27:43 - Testing User Interactions
+5:54:21 - What is Testing//
+5:54:39 - Types Of Automated Testing//
+5:57:05 - Testing Frameworks//
+5:57:52 - Let's make a Testing Setup//
+6:00:09 - Testing Basic Code//
+6:04:46 - Basic Testing Syntax Theory//
+6:08:18 - Testing Math Utils//
+6:15:39 - Testing Challenges Setup//
+6:17:11 - Math Utils Challenges//
+6:23:42 - AAA Pattern Theory//
+6:25:55 - AAA Pattern In Action//
+6:27:21 - String Utils Testing//
+6:33:43 - String Utils Testing Challenges//
+6:38:45 - Array Utils Testing //
+6:44:17 - Array Utils Testing Challenges//
+6:49:18 - Object Utils Testing//
+6:56:38 - Object Utils Testing Challenges//
+7:04:08 - Test Driven Development ( TDD ) Theory//
+7:05:31 - TDD In Action//
+7:10:22 - Matchers Complete Guide//
+7:23:26 - Positive vs Negative Testing Theory//
+7:25:27- Positive vs Negative Testing In Action////
+7:28:01 - Boundary Testing Theory//
+7:30:01 - Boundary Testing In Action//
+7:40:03 - Parameterized Testing Theory//
+7:14:07 - Parameterized Testing In Action//
+7:46:34 - Testing Async Code//
+7:53:27 - React Testing Setup//
+8:05:49 - Component with Props Testing //
+8:12:33 - List Component Testing//
+8:18:44 - I Love getByRole//
+8:21:18 - getByRole In Action//
+8:28:08 - Screen Object Methods Theory//
+8:32:09 - All getBys//
+8:39:35 - All getAllBys//
+8:53:23 - All queryBys//
+9:01:33 - All queryAllBys//
+9:09:22 - All findBys//
+9:18:31 - All findAllBys//
+9:27:43 - Testing User Interactions//
 9:48:28 - Outro
